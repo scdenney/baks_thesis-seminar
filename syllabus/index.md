@@ -9,7 +9,7 @@ title: Syllabus
 <h4 class="page-sidebar-title">Contents</h4>
 <nav class="page-toc">
 <ul>
-<li><a href="#course-information">Course Information</a></li>
+<li><a href="#about-this-seminar">About This Seminar</a></li>
 <li><a href="#course-objectives">Course Objectives</a></li>
 <li><a href="#evaluation">Evaluation</a></li>
 <li><a href="#deadlines">Deadlines</a></li>
@@ -37,17 +37,13 @@ title: Syllabus
 
 ---
 
-## Course Information
-
-**Course Code:** 5723VKO1Y<br>
-**Term:** AY2025-2026 (Spring)<br>
-**Instructor:** Dr. Steven Denney ([s.c.denney@hum.leidenuniv.nl](mailto:s.c.denney@hum.leidenuniv.nl))<br>
-**Time:** Fridays, 09:15-11:00<br>
-**Location:** Lipsius 2.05, Workgroup 103
+## About This Seminar
 
 The thesis seminar guides students through each stage of the thesis-writing process: developing and refining a research question; identifying and engaging relevant literature, data, and sources; selecting appropriate theoretical frameworks and research designs; applying suitable methods; and organizing a coherent and persuasive thesis.
 
-The bachelor's thesis, a 10,000-word research paper (±10% margin), represents the culmination of your undergraduate studies in Korean Studies. As the final major academic endeavor of the curriculum, the thesis presents a rewarding challenge and a great opportunity for academic and personal growth.
+The bachelor's thesis, a 10,000-word research paper (±10% margin), represents the culmination of your undergraduate studies in Korean Studies. As the final major academic endeavor of the curriculum, the thesis presents a rewarding challenge and a great opportunity for academic and personal growth. Your thesis should demonstrate knowledge and skills relevant to the discipline of Korean Studies, including language ability; knowledge of history, politics, or culture; theory and methodology; and academic writing skills.
+
+The seminar consists of lectures and workshop-style classes during the first four weeks (the "boot camp"), followed by individual supervision meetings and periodic class sessions. This structure provides the knowledge, skills, and experience necessary to plan and write an original, well-researched thesis on a topic of your own choosing.
 
 **Important:** Attendance is mandatory. A thesis cannot be submitted outside the seminar context. Time management is crucial for meeting deadlines.
 
