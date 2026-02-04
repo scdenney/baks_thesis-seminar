@@ -12,8 +12,10 @@
   --leiden-gold: #c4a000;
 }
 
-html {
+html, body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -162,6 +164,7 @@ main h3 {
   background: #f5f7fb;
   padding: 1.5rem 0;
   border-top: 1px solid #dfe3ee;
+  margin-top: auto;
 }
 
 .site-footer p {
