@@ -91,6 +91,8 @@ The final thesis is graded separately by a thesis committee (First and Second Re
 
 ## Deadlines
 
+All assignments are due by 23:59 on the due date via Brightspace.
+
 | Assignment | Due Date |
 |------------|----------|
 | Assignment #1 (Revised Proposal) | March 13, 2025 |
