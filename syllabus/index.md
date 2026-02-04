@@ -222,22 +222,20 @@ The first four weeks provide structured training in research fundamentals before
 
 After the boot camp, students work independently with supervisors while attending periodic class sessions.
 
-| Date | Activity | Description |
-|------|----------|-------------|
-| Mar. 06 | Free | No class – plan meeting with supervisor |
-| Mar. 13 | **Deadline** | Assignment #1 due (revised proposal) |
-| Mar. 13 | Free | No class – plan meeting with supervisor |
-| Mar. 20 | Free | No class meeting; review of weeks 1-4 (pre-recorded lecture) |
-| Mar. 27 | Free | *Spring break* |
-| Apr. 03 | **Deadline** | Assignment #2 due (preliminary draft) |
-| Apr. 10 | Class | Peer review of preliminary drafts |
-| Apr. 17 | Class | Ethical concerns (AI, plagiarism, etc.) and review of KS Protocol |
-| Apr. 24 | Free | No class – free research time |
-| May 01 | Free | No class – free research time |
-| May 06 | **Deadline** | Assignment #3 due (empirical draft) |
-| May 08 | Class | Incorporating feedback in revisions |
-| May 08 | Class | In-class review and consultations |
-| Jun. 01 | **Deadline** | Final manuscript due |
+| Week | Date | Activity |
+|------|------|----------|
+| 5 | Mar. 06 | No class – plan meeting with supervisor |
+| — | Mar. 13 | **Assignment #1 due** |
+| 6 | Mar. 20 | Pre-recorded lecture: Review of weeks 1-4 |
+| — | Mar. 27 | *Spring break* |
+| — | Apr. 03 | **Assignment #2 due** |
+| 7 | Apr. 10 | Peer review of preliminary drafts |
+| 8 | Apr. 17 | Ethical concerns (AI, plagiarism, etc.) and review of KS Protocol |
+| 9 | Apr. 24 | No class – free research time |
+| 10 | May 01 | No class – free research time |
+| — | May 06 | **Assignment #3 due** |
+| 11 | May 08 | Incorporating feedback; in-class review and consultations |
+| — | Jun. 01 | **Final manuscript due** |
 
 </div>
 </div>

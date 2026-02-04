@@ -17,3 +17,4 @@ Lecture slides are posted here after each session.
 | 2 | Feb. 13 | Data and Sources – Generation, Collection, and FAIR Principles | — |
 | 3 | Feb. 20 | Conducting a Literature Review | — |
 | 4 | Feb. 27 | Analysis and Reporting – Empirical Strategies for Data Interpretation | — |
+| 6 | Mar. 20 | Pre-recorded lecture: Review of weeks 1-4 | — |

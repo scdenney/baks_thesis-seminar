@@ -5,7 +5,7 @@ title: Thesis Protocol
 
 # Thesis Protocol
 
-This document outlines the expectations and assessment criteria for a thesis in the Leiden University BA program in Koreastudies.
+This page provides a basic overview of the expectations and assessment criteria for a thesis in the Leiden University BA program in Koreastudies. For complete information, please download the full document.
 
 **Download:** [Complete Thesis Protocol (PDF)]({{ '/thesis_protocol/BAKS Thesis Protocol_2025.pdf' | relative_url }})
 
@@ -102,4 +102,4 @@ Language should be competent in readability, style, spelling, grammar, and termi
 
 Plagiarism involves presenting another's work as your own. This includes using quotations without citations or appropriating work without acknowledgment. Internet sources are subject to the same citation standards.
 
-See the [Regulations on Plagiarism](https://www.organisatiegids.universiteitleiden.nl/en/regulations/general/plagiarism-regulations) of Leiden University.
+See the [Regulations on Plagiarism](https://www.organisatiegids.universiteitleiden.nl/en/regulations/general/plagiarism) of Leiden University.

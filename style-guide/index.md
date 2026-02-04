@@ -5,7 +5,7 @@ title: Style Guide
 
 # Style Guide
 
-This guide ensures uniformity among Koreastudies thesis submissions. For questions not addressed here, refer to the *Chicago Manual of Style*.
+This page provides a basic overview of formatting and citation requirements for Koreastudies thesis submissions. For complete information, please download the full document. For questions not addressed here, refer to the *Chicago Manual of Style*.
 
 **Download:** [Complete Style Guide (PDF)]({{ '/style_guide/22082025_Spring 2025_Leiden Koreastudies Thesis Style Guide.pdf' | relative_url }})
 

@@ -6,7 +6,7 @@ title: Home
 # Overview
 
 **Course:** BA3 Korean Studies, Leiden University<br>
-**Instructor:** Dr. Steven Denney<br>
+**Instructor:** Dr. Steven Denney (stevencdenney@gmail.com)<br>
 **Time:** Fridays, 09:15-11:00<br>
 **Location:** Lipsius 2.05, Workgroup 103<br>
 **Duration:** February 06 - June 01, 2025
@@ -65,16 +65,16 @@ The final thesis is graded separately by a first and second reader.
 | 3 | Feb. 20 | Conducting a Literature Review |
 | 4 | Feb. 27 | Analysis and Reporting – Empirical Strategies for Data Interpretation |
 | 5 | Mar. 06 | *No class – plan meeting with supervisor* |
-| 6 | Mar. 13 | **Assignment #1 Due** – *No class – plan meeting with supervisor* |
-| 7 | Mar. 20 | *No class – review of weeks 1-4 (pre-recorded lecture)* |
+| — | Mar. 13 | **Assignment #1 Due** |
+| 6 | Mar. 20 | Pre-recorded lecture: Review of weeks 1-4 |
 | — | Mar. 27 | *Spring break* |
-| 8 | Apr. 03 | **Assignment #2 Due** |
-| 9 | Apr. 10 | Peer review of preliminary drafts |
-| 10 | Apr. 17 | Ethical concerns (AI, plagiarism) and review of KS Protocol |
-| 11 | Apr. 24 | *No class – free research time* |
-| 12 | May 01 | *No class – free research time* |
+| — | Apr. 03 | **Assignment #2 Due** |
+| 7 | Apr. 10 | Peer review of preliminary drafts |
+| 8 | Apr. 17 | Ethical concerns (AI, plagiarism) and review of KS Protocol |
+| 9 | Apr. 24 | *No class – free research time* |
+| 10 | May 01 | *No class – free research time* |
 | — | May 06 | **Assignment #3 Due** |
-| 13 | May 08 | Incorporating feedback; in-class review and consultations |
+| 11 | May 08 | Incorporating feedback; in-class review and consultations |
 | — | Jun. 01 | **Final Manuscript Due** |
 
 See the [Syllabus]({{ '/syllabus/' | relative_url }}) for detailed weekly content and policies.
@@ -86,7 +86,7 @@ See the [Syllabus]({{ '/syllabus/' | relative_url }}) for detailed weekly conten
 - [Download Syllabus (PDF)]({{ '/BA-Eindwerkstuk_Syllabus_Spring2025.pdf' | relative_url }}) - Complete course syllabus
 - [Style Guide]({{ '/style-guide/' | relative_url }}) - Formatting and citation requirements
 - [Thesis Protocol]({{ '/protocol/' | relative_url }}) - Assessment criteria and expectations
-- [BA Final Paper Koreastudies Prospectus](https://studiegids.universiteitleiden.nl/) (e-guide)
+- [BA Final Paper Koreastudies Prospectus](https://studiegids.universiteitleiden.nl/en/courses/134317/ba-final-paper-koreastudies) (e-guide)
 
 ---
 
