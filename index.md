@@ -60,22 +60,21 @@ The final thesis is graded separately by a first and second reader.
 
 | Week | Date | Topic |
 |------|------|-------|
-| 1 | Feb. 06 | Introduction to the Thesis Seminar |
-| 2 | Feb. 13 | Refining Your Research Question |
-| 3 | Feb. 20 | The Research Proposal Revisited |
-| 4 | Feb. 27 | Literature Review Essentials |
-| 5 | Mar. 06 | Managing Sources |
-| 6 | Mar. 13 | **Assignment #1 Due** - Workshop |
-| 7 | Mar. 20 | The Preliminary Draft |
-| 8 | Mar. 27 | Data and Methods |
-| 9 | Apr. 03 | **Assignment #2 Due** - Workshop |
-| 10 | Apr. 10 | Presenting Your Research |
-| 11 | Apr. 17 | *No Class (Break)* |
-| 12 | Apr. 24 | Empirical Draft Workshop |
-| 13 | May 01 | *No Class (Holiday)* |
-| 14 | May 06 | **Assignment #3 Due** |
-| 15 | May 15 | Finalizing Your Thesis |
-| 16 | May 22 | Individual Consultations |
+| 1 | Feb. 06 | Developing a Research Question and Identifying the Research Problem |
+| 2 | Feb. 13 | Data and Sources – Generation, Collection, and FAIR Principles |
+| 3 | Feb. 20 | Conducting a Literature Review |
+| 4 | Feb. 27 | Analysis and Reporting – Empirical Strategies for Data Interpretation |
+| 5 | Mar. 06 | *No class – plan meeting with supervisor* |
+| 6 | Mar. 13 | **Assignment #1 Due** – *No class – plan meeting with supervisor* |
+| 7 | Mar. 20 | *No class – review of weeks 1-4 (pre-recorded lecture)* |
+| — | Mar. 27 | *Spring break* |
+| 8 | Apr. 03 | **Assignment #2 Due** |
+| 9 | Apr. 10 | Peer review of preliminary drafts |
+| 10 | Apr. 17 | Ethical concerns (AI, plagiarism) and review of KS Protocol |
+| 11 | Apr. 24 | *No class – free research time* |
+| 12 | May 01 | *No class – free research time* |
+| — | May 06 | **Assignment #3 Due** |
+| 13 | May 08 | Incorporating feedback; in-class review and consultations |
 | — | Jun. 01 | **Final Manuscript Due** |
 
 See the [Syllabus]({{ '/syllabus/' | relative_url }}) for detailed weekly content and policies.

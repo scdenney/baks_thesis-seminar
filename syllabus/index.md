@@ -227,16 +227,16 @@ After the boot camp, students work independently with supervisors while attendin
 | Mar. 06 | Free | No class – plan meeting with supervisor |
 | Mar. 13 | **Deadline** | Assignment #1 due (revised proposal) |
 | Mar. 13 | Free | No class – plan meeting with supervisor |
-| Mar. 20 | Review | No class meeting; review of weeks 1-4 (pre-recorded lecture) |
+| Mar. 20 | Free | No class meeting; review of weeks 1-4 (pre-recorded lecture) |
+| Mar. 27 | Free | *Spring break* |
 | Apr. 03 | **Deadline** | Assignment #2 due (preliminary draft) |
 | Apr. 10 | Class | Peer review of preliminary drafts |
-| Apr. 17 | Class | Ethical concerns (AI, plagiarism) and review of KS Protocol |
+| Apr. 17 | Class | Ethical concerns (AI, plagiarism, etc.) and review of KS Protocol |
 | Apr. 24 | Free | No class – free research time |
 | May 01 | Free | No class – free research time |
 | May 06 | **Deadline** | Assignment #3 due (empirical draft) |
-| May 08 | Class | Incorporating feedback in revisions; in-class consultations |
-| May 15 | Class | Finalizing your thesis |
-| May 22 | Class | Individual consultations |
+| May 08 | Class | Incorporating feedback in revisions |
+| May 08 | Class | In-class review and consultations |
 | Jun. 01 | **Deadline** | Final manuscript due |
 
 </div>

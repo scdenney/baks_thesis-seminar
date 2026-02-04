@@ -13,7 +13,7 @@ Lecture slides are posted here after each session.
 
 | Week | Date | Topic | Slides |
 |------|------|-------|--------|
-| 1 | Feb. 06 | Introduction to the Thesis Seminar | — |
-| 2 | Feb. 13 | Refining Your Research Question | — |
-| 3 | Feb. 20 | The Research Proposal Revisited | — |
-| 4 | Feb. 27 | Literature Review Essentials | — |
+| 1 | Feb. 06 | Developing a Research Question and Identifying the Research Problem | — |
+| 2 | Feb. 13 | Data and Sources – Generation, Collection, and FAIR Principles | — |
+| 3 | Feb. 20 | Conducting a Literature Review | — |
+| 4 | Feb. 27 | Analysis and Reporting – Empirical Strategies for Data Interpretation | — |
