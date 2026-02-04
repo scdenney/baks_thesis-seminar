@@ -26,8 +26,8 @@ The final thesis should demonstrate knowledge and skills relevant to the discipl
 By the end of this course, you will be able to:
 
 1. Identify a sufficiently interesting research question that can be answered given the time constraints and data restrictions of the BA thesis project
-2. Utilize a range of primary and secondary sources, including sources in Korean, to situate the thesis within the relevant literature
-3. Develop an appropriate analytical framework to answer the chosen research question
+2. Use a range of sources in Korean, English, and other languages as necessary to situate the thesis within a relevant literature review that informs the significance of the research and motivates an appropriate research design
+3. Develop an appropriate analytical framework that integrates suitable data sources and methods, demonstrating understanding of data collection and analysis procedures
 4. Produce original academic writing that adheres to appropriate stylistic conventions and academic standards
 
 ---
@@ -84,6 +84,7 @@ See the [Syllabus]({{ '/syllabus/' | relative_url }}) for detailed weekly conten
 
 ## Resources
 
+- [Download Syllabus (PDF)]({{ '/BA-Eindwerkstuk_Syllabus_Spring2025.pdf' | relative_url }}) - Complete course syllabus
 - [Style Guide]({{ '/style-guide/' | relative_url }}) - Formatting and citation requirements
 - [Thesis Protocol]({{ '/protocol/' | relative_url }}) - Assessment criteria and expectations
 - [BA Final Paper Koreastudies Prospectus](https://studiegids.universiteitleiden.nl/) (e-guide)

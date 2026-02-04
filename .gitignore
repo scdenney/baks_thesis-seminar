@@ -13,8 +13,8 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# Source documents (optional - uncomment to exclude)
-# *.docx
+# Source documents
+*.docx
 
 # Jekyll build (if building locally)
 _site/
