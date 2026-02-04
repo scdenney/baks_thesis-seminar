@@ -40,9 +40,9 @@
     Ligatures=TeX,
     Numbers=OldStyle
 ]
-\setsansfont{Helvetica Neue}[
+\setsansfont{Arial}[
     Ligatures=TeX,
-    Scale=0.95
+    Scale=MatchLowercase
 ]
 
 % ============================================================
@@ -95,6 +95,25 @@
 \renewcommand{\thesection}{\Alph{section}}
 
 % ============================================================
+% TOC FORMATTING
+% ============================================================
+% Section entries with dotted lines
+\titlecontents{section}
+    [0em]
+    {\addvspace{0.8em}\bfseries\sffamily}
+    {\thecontentslabel\quad}
+    {}
+    {\titlerule*[0.5pc]{.}\contentspage}
+
+% Subsection entries (indented, with dotted lines)
+\titlecontents{subsection}
+    [2em]
+    {\sffamily}
+    {\thecontentslabel\quad}
+    {}
+    {\titlerule*[0.5pc]{.}\contentspage}
+
+% ============================================================
 % TABLE SETTINGS
 % ============================================================
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
@@ -118,24 +137,24 @@
 % ============================================================
 \begin{titlepage}
     \centering
-    \vspace*{2cm}
+    \vspace*{0.8cm}
 
     {\Huge\bfseries\sffamily\color{leidenblue} \doctitle\par}
-    \vspace{0.5cm}
+    \vspace{0.4cm}
     {\Large\sffamily \docsubtitle\par}
 
-    \vspace{1.5cm}
+    \vspace{1cm}
 
     {\normalsize
     Date created: \datecreated\\
     Updated: \dateupdated
     }
 
-    \vspace{2cm}
+    \vspace{1cm}
 
     \rule{\textwidth}{0.4pt}
 
-    \vspace{1.5cm}
+    \vspace{1cm}
 
     \begin{minipage}{0.85\textwidth}
         \section*{\normalsize\sffamily What is the purpose of this document?}
@@ -147,7 +166,7 @@
         The guidelines are adapted from Leiden University thesis evaluation material and modified for clarity and additional guidance. These guidelines are meant to bring transparency to the thesis writing and assessment process but are subject to change. Ultimate decision-making authority resides with the thesis supervisor.
     \end{minipage}
 
-    \vfill
+    \vspace{0.5cm}
 
     % Table of Contents on title page
     \begin{minipage}{0.85\textwidth}
@@ -159,8 +178,11 @@
         \makeatother
     \end{minipage}
 
-    \vspace{2cm}
+    \vfill
 \end{titlepage}
+
+% Reset page counter so content starts at page 1
+\setcounter{page}{1}
 
 % ============================================================
 % SECTION A: THESIS OBJECTIVES AND ASSESSMENT CRITERIA
@@ -381,22 +403,14 @@ Acknowledge the limitations of your methodological approach. Identify potential 
 Reflect on your positionality as a researcher, particularly if conducting anthropological or ethnographic research. Discuss how your personal background and connections may influence the research process. Clarify the scope of your study by addressing the representativeness of your selected group or community and the extent to which your findings can support broader generalizations.
 
 % ============================================================
-% APPENDIX A: GRADE DESCRIPTORS
+% APPENDICES
 % ============================================================
 \newpage
-\appendix
-% Reset section format for appendices
-\titleformat{\section}
-    {\Large\bfseries\sffamily\color{leidenblue}}
-    {Appendix \thesection:}{0.5em}{}
-\titlecontents{section}
-    [0em]
-    {\addvspace{1em}\bfseries\sffamily}
-    {Appendix \thecontentslabel:\quad}
-    {}
-    {\titlerule*[0.5pc]{.}\contentspage}
 
-\section{Grade Descriptors}
+% Appendix A
+\phantomsection
+\addcontentsline{toc}{section}{Appendix A: Grade Descriptors}
+\section*{\color{leidenblue}Appendix A: Grade Descriptors}
 
 \subsection*{Grade Descriptors for written coursework}
 
@@ -445,7 +459,9 @@ No answer is offered, or an answer that is totally irrelevant, fundamentally wro
 % APPENDIX B: EXAMPLE THESIS ASSESSMENT FORM
 % ============================================================
 \newpage
-\section{Example Thesis Assessment Form}
+\phantomsection
+\addcontentsline{toc}{section}{Appendix B: Example Thesis Assessment Form}
+\section*{\color{leidenblue}Appendix B: Example Thesis Assessment Form}
 
 The process for determining the final grade of a thesis involves an initial independent assessment by two readers, followed by a comparison and discussion to agree on a final grade, which may be an average of their initial grades but is not required to be. If consensus is not reached, the thesis and reader opinions are forwarded to the Board of Examiners for a third reader's decision. Grades must be whole or half numbers within a 1.0 to 10.0 range, excluding the 5.0 to 6.0 interval unless a grade of 6.0 is given, in which case the Board of Examiners is consulted to confirm if the thesis meets the minimum passing criteria or not.
 
