@@ -16,13 +16,4 @@ Course website for the BA-Eindwerkstuk Seminar (5723VKO1Y) in the Korean Studies
 - **Style Guide** - Formatting and citation guidelines
 - **Protocol** - Thesis expectations and assessment criteria
 
-## Deploying
-
-This site uses Jekyll with the Cayman theme and custom styling. To enable GitHub Pages:
-
-1. Go to repository Settings > Pages
-2. Under "Source", select "Deploy from a branch"
-3. Select the `main` branch and `/ (root)` folder
-4. Click Save
-
-The site will be available at `https://scdenney.github.io/baks_thesis-seminar/`
+The site is available at `https://scdenney.github.io/baks_thesis-seminar/`
