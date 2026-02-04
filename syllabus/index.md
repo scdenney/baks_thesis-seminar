@@ -150,7 +150,7 @@ The first four weeks provide structured training in research fundamentals before
 - Introduce the structure of an academic research manuscript
 
 **Reading:**
-- Introduction and Part I of Mullaney, Thomas S., and Christopher Rea. *Where Research Begins: Choosing a Research Project That Matters to You (and the World)*. University of Chicago Press, 2022. ([PDF]({{ '/readings/Mullaney_Rea_Where_Research_Begins.pdf' | relative_url }})
+- Introduction and Part I of Mullaney, Thomas S., and Christopher Rea. *Where Research Begins: Choosing a Research Project That Matters to You (and the World)*. University of Chicago Press, 2022. ([PDF])({{ '/readings/Mullaney_Rea_Where_Research_Begins.pdf' | relative_url }})
 
 **Class Plan:**
 - Define the structure of an academic research paper (introduction, research problem, research question)
