@@ -9,7 +9,7 @@ title: Home
 **Instructor:** Dr. Steven Denney ([s.c.denney@hum.leidenuniv.nl](mailto:s.c.denney@hum.leidenuniv.nl))<br>
 **Time:** Fridays, 09:15-11:00<br>
 **Location:** Lipsius 2.05, Workgroup 103<br>
-**Duration:** February 06 - June 01, 2025
+**Duration:** February 06 - June 01, 2026
 
 ---
 
@@ -36,10 +36,10 @@ By the end of this course, you will be able to:
 
 | Assignment | Due Date |
 |------------|----------|
-| Assignment #1: Revised Research Proposal | March 13, 2025 |
-| Assignment #2: Preliminary Draft | April 03, 2025 |
-| Assignment #3: Empirical Draft | May 06, 2025 |
-| Final Manuscript | June 01, 2025 |
+| Assignment #1: Revised Research Proposal | March 13, 2026 |
+| Assignment #2: Preliminary Draft | April 03, 2026 |
+| Assignment #3: Empirical Draft | May 06, 2026 |
+| Final Manuscript | June 01, 2026 |
 
 ---
 

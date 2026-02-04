@@ -91,10 +91,10 @@ All assignments are due by 23:59 on the due date via Brightspace.
 
 | Assignment | Due Date |
 |------------|----------|
-| Assignment #1 (Revised Proposal) | March 13, 2025 |
-| Assignment #2 (Preliminary Draft) | April 03, 2025 |
-| Assignment #3 (Empirical Draft) | May 06, 2025 |
-| Final Manuscript | June 01, 2025 |
+| Assignment #1 (Revised Proposal) | March 13, 2026 |
+| Assignment #2 (Preliminary Draft) | April 03, 2026 |
+| Assignment #3 (Empirical Draft) | May 06, 2026 |
+| Final Manuscript | June 01, 2026 |
 
 ---
 

@@ -15,9 +15,9 @@ This page provides an overview of the three graded assignments for the seminar. 
 
 | Assignment | Weight | Due Date |
 |------------|--------|----------|
-| Assignment #1: Revised Research Proposal | 20% | March 13, 2025 |
-| Assignment #2: Preliminary Draft | 35% | April 03, 2025 |
-| Assignment #3: Empirical Draft | 35% | May 06, 2025 |
+| Assignment #1: Revised Research Proposal | 20% | March 13, 2026 |
+| Assignment #2: Preliminary Draft | 35% | April 03, 2026 |
+| Assignment #3: Empirical Draft | 35% | May 06, 2026 |
 
 Participation accounts for 10% of the seminar grade. The final thesis is graded separately.
 
@@ -25,7 +25,7 @@ Participation accounts for 10% of the seminar grade. The final thesis is graded 
 
 ## Assignment #1: Revised Research Proposal
 
-**Due:** March 13, 2025
+**Due:** March 13, 2026
 
 The revised research proposal builds on work completed in the BA2 Research Seminar. Refine your research question, demonstrate engagement with the relevant literature, and outline your proposed methodology.
 
@@ -42,7 +42,7 @@ The revised research proposal builds on work completed in the BA2 Research Semin
 
 ## Assignment #2: Preliminary Draft
 
-**Due:** April 03, 2025
+**Due:** April 03, 2026
 
 The preliminary draft includes a substantially developed introduction, literature review, and analytical framework/methodology section.
 
@@ -58,7 +58,7 @@ The preliminary draft includes a substantially developed introduction, literatur
 
 ## Assignment #3: Empirical Draft
 
-**Due:** May 06, 2025
+**Due:** May 06, 2026
 
 The empirical draft is a near-complete version of your thesis that includes your research findings and analysis.
 
@@ -75,7 +75,7 @@ The empirical draft is a near-complete version of your thesis that includes your
 
 ## Final Manuscript
 
-**Due:** June 01, 2025
+**Due:** June 01, 2026
 
 The final thesis manuscript is submitted to your supervisor for assessment by the first and second reader.
 
