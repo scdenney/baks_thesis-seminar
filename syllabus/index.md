@@ -13,7 +13,11 @@ title: Syllabus
 <li><a href="#course-objectives">Course Objectives</a></li>
 <li><a href="#evaluation">Evaluation</a></li>
 <li><a href="#deadlines">Deadlines</a></li>
-<li><a href="#policies">Policies</a></li>
+<li><a href="#policies">Policies</a>
+<ul>
+<li><a href="#use-of-generative-ai">Use of Generative AI</a></li>
+</ul>
+</li>
 <li><a href="#assignments-overview">Assignments Overview</a></li>
 <li><a href="#boot-camp-weeks-1-4">Boot Camp (Weeks 1-4)</a>
 <ul>
@@ -107,11 +111,13 @@ A strict attendance policy is in effect:
 - Any absences must be communicated in advance
 - Dispensation for extenuating circumstances can only be granted by the Board of Examiners
 
-### Academic Honesty & GenAI
+### Academic Honesty
 
-Plagiarism is a serious academic offense. Borrowing an idea or using a sentence from another's work without proper citation will result in course failure.
+Plagiarism is a serious academic offense. Borrowing an idea or using a sentence from another's work without proper citation will result in course failure. See the [Regulations on Plagiarism](https://www.organisatiegids.universiteitleiden.nl/en/regulations/general/plagiarism) for more information.
 
-Generative AI tools may be used only in ethical, responsible, and transparent ways, in accordance with Leiden University Faculty of Humanities guidelines. Unless explicitly permitted, AI-generated content may not be submitted as your own work; any approved use must be disclosed and properly cited.
+### Use of Generative AI
+
+Generative AI (GenAI) tools may be used only in ethical, responsible, and transparent ways, in accordance with the [Guidelines for the Use of GenAI in Assessment](https://www.organisatiegids.universiteitleiden.nl/en/regulations/humanities/guidelines-for-the-use-of-genai-in-assessment) established by the Faculty of Humanities. Unless explicitly permitted, AI-generated content may not be submitted as your own work; any approved use must be disclosed and properly cited. Consult with your thesis supervisor if you have questions about appropriate use of these tools.
 
 ### Disability Accommodation
 
