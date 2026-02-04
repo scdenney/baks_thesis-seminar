@@ -7,7 +7,7 @@ title: Thesis Protocol
 
 This page provides a basic overview of the expectations and assessment criteria for a thesis in the Leiden University BA program in Koreastudies. For complete information, please download the full document.
 
-**Download:** [Complete Thesis Protocol (PDF)]({{ '/protocol/BAKS Thesis Protocol_2025.pdf' | relative_url }})
+**Download:** [Complete Thesis Protocol (PDF)]({{ '/protocol/BAKS_Thesis_Protocol.pdf' | relative_url }})
 
 ---
 
@@ -103,3 +103,9 @@ Language should be competent in readability, style, spelling, grammar, and termi
 Plagiarism involves presenting another's work as your own. This includes using quotations without citations or appropriating work without acknowledgment. Internet sources are subject to the same citation standards.
 
 See the [Regulations on Plagiarism](https://www.organisatiegids.universiteitleiden.nl/en/regulations/general/plagiarism) of Leiden University.
+
+---
+
+## Use of Generative AI
+
+The use of generative AI (GenAI) tools in academic work must comply with faculty policy. Students are expected to familiarize themselves with the [Guidelines for the Use of GenAI in Assessment](https://www.organisatiegids.universiteitleiden.nl/en/regulations/humanities/guidelines-for-the-use-of-genai-in-assessment) established by the Faculty of Humanities. If you use GenAI tools in any part of your research or writing, you must disclose this use in accordance with faculty guidelines. Consult with your thesis supervisor if you have questions.

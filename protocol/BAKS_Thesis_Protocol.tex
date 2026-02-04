@@ -1,0 +1,619 @@
+%!TEX program = xelatex
+\documentclass[11pt,a4paper]{article}
+
+% ============================================================
+% PACKAGES
+% ============================================================
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{footmisc}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{colortbl}
+
+% ============================================================
+% COLORS (Leiden University inspired)
+% ============================================================
+\definecolor{leidenblue}{HTML}{002147}
+\definecolor{leidengold}{HTML}{C4A000}
+\definecolor{linkblue}{HTML}{0066CC}
+\definecolor{tableheader}{HTML}{002147}
+\definecolor{tablerow1}{HTML}{F5F5F5}
+\definecolor{tablerow2}{HTML}{FFFFFF}
+
+% ============================================================
+% FONTS
+% ============================================================
+\setmainfont{Times New Roman}[
+    Ligatures=TeX,
+    Numbers=OldStyle
+]
+\setsansfont{Helvetica Neue}[
+    Ligatures=TeX,
+    Scale=0.95
+]
+
+% ============================================================
+% HYPERLINKS
+% ============================================================
+\hypersetup{
+    colorlinks=true,
+    linkcolor=leidenblue,
+    urlcolor=linkblue,
+    citecolor=leidenblue,
+    pdfauthor={Program in Koreastudies, Leiden University},
+    pdftitle={BA Thesis Protocol},
+    pdfsubject={Thesis Guidelines for BA Koreastudies}
+}
+
+% ============================================================
+% HEADERS AND FOOTERS
+% ============================================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\sffamily BA Thesis Protocol}
+\fancyhead[R]{\small\sffamily Program in Koreastudies}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyfoot[C]{\thepage}
+    \renewcommand{\headrulewidth}{0pt}
+}
+
+% ============================================================
+% SECTION FORMATTING
+% ============================================================
+\titleformat{\section}
+    {\Large\bfseries\sffamily\color{leidenblue}}
+    {\thesection.}{0.5em}{}
+\titleformat{\subsection}
+    {\large\bfseries\sffamily}
+    {\thesubsection}{0.5em}{}
+\titleformat{\subsubsection}
+    {\normalsize\bfseries\sffamily}
+    {\thesubsubsection}{0.5em}{}
+
+\titlespacing*{\section}{0pt}{2ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{1.5ex plus 1ex minus .2ex}{1ex plus .2ex}
+
+% Lettered sections (A, B, C, D)
+\renewcommand{\thesection}{\Alph{section}}
+
+% ============================================================
+% TABLE SETTINGS
+% ============================================================
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% ============================================================
+% DOCUMENT INFO
+% ============================================================
+\newcommand{\doctitle}{BA Thesis Protocol}
+\newcommand{\docsubtitle}{Program in Koreastudies}
+\newcommand{\datecreated}{02.02.2024}
+\newcommand{\dateupdated}{04.02.2026}
+
+% ============================================================
+% BEGIN DOCUMENT
+% ============================================================
+\begin{document}
+
+% ============================================================
+% TITLE PAGE
+% ============================================================
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+
+    {\Huge\bfseries\sffamily\color{leidenblue} \doctitle\par}
+    \vspace{0.5cm}
+    {\Large\sffamily \docsubtitle\par}
+
+    \vspace{1.5cm}
+
+    {\normalsize
+    Date created: \datecreated\\
+    Updated: \dateupdated
+    }
+
+    \vspace{2cm}
+
+    \rule{\textwidth}{0.4pt}
+
+    \vspace{1.5cm}
+
+    \begin{minipage}{0.85\textwidth}
+        \section*{\normalsize\sffamily What is the purpose of this document?}
+
+        This document outlines the expectations and assessment criteria for a thesis in the Leiden University BA program in Koreastudies. It supplements the syllabus from the BA-Eindwerkstuk Seminar and the \href{https://studiegids.universiteitleiden.nl/en/courses/134317/ba-final-paper-koreastudies}{BA Final Paper Koreastudies prospectus} (e-guide).
+
+        \vspace{0.5cm}
+
+        The guidelines are adapted from Leiden University thesis evaluation material and modified for clarity and additional guidance. These guidelines are meant to bring transparency to the thesis writing and assessment process but are subject to change. Ultimate decision-making authority resides with the thesis supervisor.
+    \end{minipage}
+
+    \vfill
+
+    % Table of Contents on title page
+    \begin{minipage}{0.85\textwidth}
+        {\normalsize\sffamily\bfseries Contents}
+        \vspace{0.3cm}
+        \renewcommand{\contentsname}{}
+        \makeatletter
+        \@starttoc{toc}
+        \makeatother
+    \end{minipage}
+
+    \vspace{2cm}
+\end{titlepage}
+
+% ============================================================
+% SECTION A: THESIS OBJECTIVES AND ASSESSMENT CRITERIA
+% ============================================================
+\section{Thesis Objectives and Assessment Criteria}
+
+\subsection{Objectives of Koreastudies (BA) Thesis}
+
+The Koreastudies Bachelor of Arts program at Leiden University provides students with an integrative framework for analyzing Korea's role within global dynamics from a humanities perspective. The program examines Korea's influence and regional interactions through an interdisciplinary approach that encompasses culture, history, politics, and economics. Students train to synthesize cross-disciplinary knowledge for focused analyses of Korea, supported by systematic study of the Korean language.
+
+The BA thesis is the capstone project in the program. The thesis aims to enable students to do the following:
+
+\begin{enumerate}
+    \item Use up-to-date research methodologies relevant to the disciplines within Korean Studies.
+    \item Engage with and comprehend complex academic discussions related to Korean Studies.
+    \item Articulate their research findings and analyses in scholarly English.
+    \item Manage their research projects within given deadlines, demonstrating the ability to perform under pressure.
+\end{enumerate}
+
+The thesis project is designed to develop key academic skills, including the following:
+
+\begin{enumerate}
+    \item \textbf{Research Question Formulation:} Craft a clear and focused research question informed by a comprehensive review of the relevant literature.
+    \item \textbf{Literature Appraisal:} Evaluate existing literature to determine its quality and reliability.
+    \item \textbf{Planning and Execution:} Develop and implement a research project under academic supervision that integrates appropriate research methodologies.
+    \item \textbf{Presentation of Findings:} Communicate research results in a clear, coherent, and well-structured written format that presents a sound argumentative framework based on empirical evidence.
+\end{enumerate}
+
+Bachelor's thesis students receive supervision through both a thesis seminar, focusing on research skills and writing, and individual guidance on substance and content from a thesis supervisor.
+
+\subsection{Assessment Criteria}
+
+The thesis must meet a length requirement of 10,000 words ($\pm$ 10\% margin).\footnote{See the syllabus for the BA thesis (BA-Eindwerkstuk Seminar) and e-guide for more specific guidance on course requirements and general expectations.} Manuscripts are assessed according to four general criteria, associated with sections of the thesis and associated thesis components. These are outlined in general below. Below is a more detailed overview of the thesis expectations and how these criteria are assessed.
+
+\vspace{1em}
+
+\begin{table}[ht]
+\centering
+\renewcommand{\arraystretch}{1.5}
+\setlength{\tabcolsep}{10pt}
+\begin{tabularx}{\textwidth}{|L{3.2cm}|L{3.5cm}|X|}
+\hline
+\rowcolor{tableheader}
+\textcolor{white}{\textbf{Assessment Item}} &
+\textcolor{white}{\textbf{Associated Thesis Section(s)}} &
+\textcolor{white}{\textbf{Associated Thesis Components}} \\
+\hline
+\rowcolor{tablerow1}
+1. Knowledge and insight (contents, relation to the field) &
+Introduction; Literature Review &
+Research question and motivation; research problem; puzzle; research gap; literature review \\
+\hline
+\rowcolor{tablerow2}
+2. Application of knowledge and insight (methodology) &
+Analytical Framework*; Research Findings &
+Source material; data; methods; analytical frameworks and models; research findings \\
+\hline
+\rowcolor{tablerow1}
+3. Reaching conclusions (interpretation, argumentation, conclusion) &
+Conclusion \& Discussion &
+Synthesis of findings; summary of research; discussion of findings; contribution of research \\
+\hline
+\rowcolor{tablerow2}
+4. Communication (writing and structure) &
+Entire thesis &
+Readability; style; spelling; grammar; terminology; citations and references; bibliography \\
+\hline
+\rowcolor{tablerow1}
+5. Participation in thesis seminar &
+--- &
+--- \\
+\hline
+\end{tabularx}
+\end{table}
+
+\vspace{0.5em}
+{\small * The Analytical Framework, which can be alternatively understood and identified as an Empirical Strategy, Methods, or Data and Methodology section of the research, provides a systematic overview of how the research organizes and evaluates data and information, allowing researchers to identify patterns, relationships, and underlying principles in their study. This research component introduces data sources and methods for analyzing and interpreting information. More information on this section is provided below.}
+
+% ============================================================
+% SECTION B: THESIS EXPECTATIONS
+% ============================================================
+\newpage
+\section{Thesis Expectations}
+
+\subsection*{Knowledge and insight (contents, relation to the field)}
+
+This assessment item relates to the research question, research motivation, and how the research is situated within an existing body of literature---i.e., the literature review. The research question should reflect insight into the key discussions and methods of the field, ensuring clarity, relevance, and definition of the problem. It should be well-embedded in existing literature and demonstrate originality. The literature review should critically assess existing research to contextualize the study and inform the analytical framework or empirical strategy of the research.
+
+\subsection*{Application of knowledge and insight (data, methodology)}
+
+Expectations include a critical analysis of primary material or sources, demonstrating the use of concepts and effective research methods. Secondary sources should be advanced and academic, with a clear description and justification of the adopted method.
+
+\subsection*{Reaching conclusions (interpretation, argumentation, and conclusion)}
+
+Conclusions should be logical and well-founded, following logically from the analyzed material, with empirical analysis playing a crucial role in deriving insights from this material. The degree to which the thesis question is answered and results are connected to other and future research is important.
+
+\subsection*{Communication (writing and structure)}
+
+Language use should be competent in terms of readability, style, spelling, grammar, and correct terminology. The structure and layout of the thesis should be clear, including division into chapters and sections, table of contents, and illustrations. The thesis should include the correct use of reference guidelines and a complete list of references.
+
+\subsection*{Plagiarism Note}
+
+Plagiarism involves presenting another person's work or ideas as your own. This includes using direct quotations without appropriate citations or appropriating someone else's work without acknowledgment. Even inadvertently, failure to use quotation marks for direct quotes also constitutes an academic offense. It is important to understand that materials sourced from the internet are subject to the same rigorous citation standards as traditional sources. If you are uncertain about what constitutes plagiarism or how to cite sources correctly, you are strongly encouraged to consult with your supervisor. Any plagiarism will be addressed in alignment with the university's established rules and disciplinary practices. See also the \href{https://www.organisatiegids.universiteitleiden.nl/en/regulations/general/plagiarism}{Regulations on Plagiarism} of Leiden University.
+
+\subsection*{Use of Generative AI}
+
+The use of generative artificial intelligence (GenAI) tools in academic work must comply with faculty policy. Students are expected to familiarize themselves with the \href{https://www.organisatiegids.universiteitleiden.nl/en/regulations/humanities/guidelines-for-the-use-of-genai-in-assessment}{Guidelines for the Use of GenAI in Assessment} established by the Faculty of Humanities. These guidelines outline permitted and prohibited uses of GenAI tools during your studies. If you use GenAI tools in any part of your research or writing process, you must disclose this use appropriately and in accordance with faculty guidelines. Consult with your thesis supervisor if you have questions about appropriate use of these tools.
+
+% ============================================================
+% SECTION C: EXAMPLE THESIS STRUCTURE
+% ============================================================
+\newpage
+\section{Example Thesis Structure}
+
+The thesis structure will vary depending on the kind of research being conducted. Below is a simplified example, but only such. Consult your BA-Eindwerkstuk Seminar instructor or thesis supervisor for additional guidance.
+
+\begin{enumerate}[label=\textbf{\Roman*.}, leftmargin=2em, itemsep=0.5em]
+    \item \textbf{Introduction}
+    \begin{enumerate}[label=\alph*., leftmargin=1.5em]
+        \item Research question
+        \item Research problem, gap, and motivation
+        \item Proposed research plan (method, etc.)
+        \item Thesis roadmap
+    \end{enumerate}
+
+    \item \textbf{Literature Review (LR)}
+    \begin{enumerate}[label=\alph*., leftmargin=1.5em]
+        \item LR section I
+        \item LR section II
+        \item LR section \ldots\ \textit{n}
+    \end{enumerate}
+
+    \item \textbf{Analytical Framework*}
+    \begin{enumerate}[label=\alph*., leftmargin=1.5em]
+        \item Design, data, and methods
+        \item Other methodological concerns and scope conditions
+    \end{enumerate}
+
+    \item \textbf{Empirical Findings}
+    \begin{enumerate}[label=\alph*., leftmargin=1.5em]
+        \item Outcome I
+        \item Outcome II
+        \item Outcome \ldots\ \textit{n}
+    \end{enumerate}
+
+    \item \textbf{Conclusion and Discussion}
+    \begin{enumerate}[label=\alph*., leftmargin=1.5em]
+        \item Summary of research and findings
+        \item Research contributions
+        \item Shortcomings, limitations, and alternative explanations
+        \item Avenues for future research
+    \end{enumerate}
+
+    \item \textbf{Bibliography}
+
+    \item \textbf{Appendices}
+\end{enumerate}
+
+\vspace{1em}
+{\small * The next section of this document provides an overview of some of the different methodological approaches.}
+
+% ============================================================
+% SECTION D: ANALYTICAL FRAMEWORK
+% ============================================================
+\newpage
+\section{Analytical Framework}
+
+Establishing a clear analytical framework is crucial as it explains in detail the procedures and techniques for data collection, analysis, and interpretation. Also referred to as methodology, empirical strategy, or data and methods, this section represents a critical component of the thesis project and broader academic research. Korean Studies, as an interdisciplinary field, permits the application of a wide array of frameworks, analytical tools, and resources to investigate Korean culture, society, history, politics, and economics. This breadth of available methodologies underscores the necessity of articulating a precise and rigorously conceived strategy.
+
+The following guidelines are meant to assist students and support interaction with supervisors in structuring this chapter of their thesis. Students must select an approach that aligns with their research question and conforms to the established literature. Additionally, students must demonstrate the requisite technical expertise to execute their research design effectively. Although this guide does not encompass all possible methodological considerations, it establishes clear expectations for students and instructors.
+
+\subsection{Analytical Framework Guidelines}
+
+The subsections provided below serve as structural guidelines and need not be followed precisely, used in their entirety, or labeled exactly as shown.
+
+\subsubsection*{Introduction}
+
+Begin with a concise summary of your methodological approach, justifying your selection of specific methods in relation to your research question and theoretical framework. Link your research design to the study's objectives, research question, and literature review. Indicate how the theoretical framework(s) inform your methodological choices and support your analysis. This overview sets the stage for the detailed explanations that follow.
+
+\subsubsection*{Design}
+
+Clearly specify whether your study adopts a qualitative, quantitative, or mixed-methods design, and describe the methods you employ. Justify your design choice based on the nature of your research question and available data. Define the focus of your study by outlining its geographical, temporal, and sociopolitical boundaries. If your research incorporates fieldwork, describe the location selected, the criteria for its selection, the community's size and composition, the duration of your engagement, your role in the field, and the methods used to record observations.
+
+\subsubsection*{Sources and Selection}
+
+Selecting and using data sources across disciplines involves understanding their unique methodological frameworks and research objectives. Detail the types of data sources used, the criteria for their selection, and the procedures for data collection. Explain how different disciplinary methodologies shape your selection process.
+
+\begin{itemize}[leftmargin=1.5em, itemsep=0.5em]
+    \item \textit{Historical research} employs primary sources such as letters, official records, and artifacts to access past events and perspectives directly. Researchers locate these documents through archives and digital databases while critically assessing their authenticity and relevance. They supplement primary sources with secondary materials that provide context and position the research within established historical narratives. This rigorous evaluation of sources for bias and contextual accuracy forms the cornerstone of historical methodology.
+
+    \item In \textit{Political Science, Anthropology, Geography}, and related \textit{social sciences}, researchers apply a diverse set of data collection methods. Surveys, interviews, and ethnographic approaches yield both quantitative and qualitative insights into individual and collective perspectives, enabling the systematic capture of attitudes, opinions, and behaviors. Researchers also conduct case studies---including comparative designs---to examine specific phenomena in depth. Such comparative analyses reveal patterns and distinctions across cases, thereby enhancing the robustness and validity of the research findings.
+
+    \item \textit{Linguistics and Discourse Analysis} investigate language patterns using a variety of data sources such as texts, recordings, and questionnaires. Researchers select these materials based on criteria such as language variety, context of use, and sample representativeness. They often combine statistical techniques for corpus analysis with qualitative approaches for interpreting discourse. The application of standardized transcription conventions and specialized software ensures the accurate capture of linguistic features. Visual aids, including tables and figures, succinctly present details such as corpus size and demographic profiles of study subjects.
+
+    \item In \textit{Literary Studies}, primary research materials include literary texts such as novels, poems, and other writings. Researchers analyze these texts to uncover artistic expressions and narrative structures that offer insights into cultural, historical, and linguistic dimensions. They also consult secondary sources---such as literary criticism, reviews, and theoretical analyses---accessible via archives or digital databases. Close reading techniques facilitate the examination of language, symbolism, and literary devices, while comparative analysis, intertextual research, and genre-specific methods enrich the study of literature. Discourse analysis further delineates the language patterns and rhetorical strategies employed by authors.
+
+    \item \textit{Media Studies} integrates methodologies from both the humanities and social sciences. Scholars in film and television studies perform detailed analyses of visual and narrative elements---such as themes, symbolism, camera angles, and lighting---in a manner analogous to close readings in literary studies. Researchers adopting a communications framework examine audience reception through surveys and quantitative analyses of industry trends. Others employ ethnographic methods derived from Anthropology, conducting interviews and focus groups with viewers, users, and media producers to observe media consumption practices. Emerging research in new media, including social media platforms, also benefits from these varied methodological approaches.
+
+    \item \textit{Gender Studies} demonstrates methodological diversity while maintaining a commitment to analyzing social and cultural constructions of femininity, masculinity, and sexuality. Originating from Women's Studies, the discipline now embraces an intersectional approach that considers gender alongside sexuality, race, class, and disability. Scholars employ approaches ranging from feminist psychoanalytic theory and media analysis to archival research, thereby tracing historical and cultural constructions of gender across different contexts.
+\end{itemize}
+
+The disciplinary backgrounds reviewed above significantly inform the selection and use of data sources. Each discipline's approach to data collection and analysis is shaped by its specific research goals and theoretical underpinnings, highlighting the diversity of methodologies in academic research. Consult closely with your thesis supervisor to understand your design preferences, choices, and trade-offs.
+
+\subsubsection*{Method}
+
+Describe the analytical techniques you employ to process your data. Specify the procedures for source translation, content analysis, statistical modeling, discourse or visual analysis, and close reading. Identify any software or tools used for data processing and coding, whether analyzing interview transcripts, survey responses, or other data types. If you developed a survey or interview protocol, provide an overview of its design and key questions; include detailed instruments in an appendix if necessary. Use tables, figures, and other visual aids to present key variables, document specifics, and empirical processes clearly.
+
+\subsubsection*{Ethical Considerations}
+
+Outline the ethical issues pertinent to your research. Explain how you obtain consent, preserve participant anonymity, and secure necessary permissions for data access. Reference Leiden University's ethics guidelines and relevant resources.\footnote{For more information on the Humanities' Ethics Committee, see here: \url{https://www.organisatiegids.universiteitleiden.nl/en/faculties-and-institutes/humanities/committees-and-boards/ethics-committee}.}
+
+\subsubsection*{Limitations}
+
+Acknowledge the limitations of your methodological approach. Identify potential biases, data availability issues, and constraints inherent to the area study context. Explain how these limitations may affect your findings and their interpretation.
+
+\subsubsection*{Positionality and Generalizations}
+
+Reflect on your positionality as a researcher, particularly if conducting anthropological or ethnographic research. Discuss how your personal background and connections may influence the research process. Clarify the scope of your study by addressing the representativeness of your selected group or community and the extent to which your findings can support broader generalizations.
+
+% ============================================================
+% APPENDIX A: GRADE DESCRIPTORS
+% ============================================================
+\newpage
+\appendix
+% Reset section format for appendices
+\titleformat{\section}
+    {\Large\bfseries\sffamily\color{leidenblue}}
+    {Appendix \thesection:}{0.5em}{}
+\titlecontents{section}
+    [0em]
+    {\addvspace{1em}\bfseries\sffamily}
+    {Appendix \thecontentslabel:\quad}
+    {}
+    {\titlerule*[0.5pc]{.}\contentspage}
+
+\section{Grade Descriptors}
+
+\subsection*{Grade Descriptors for written coursework}
+
+\vspace{1em}
+
+\begin{longtable}{L{2cm}L{12cm}}
+\toprule
+\textbf{Grade} & \textbf{Description} \\
+\midrule
+\endhead
+
+9--10\newline \textit{distinction} &
+An outstanding answer showing an excellent understanding of the issues and methodologies; original, independent thinking informs an answer based upon rigorous argument accurately supported by evidence derived from a wide range of source material. \\
+\midrule
+
+8--8.9\newline \textit{merit} &
+An answer demonstrates an excellent understanding of the issues and methodologies; the answer displays independent thought and a strong and well-organized argument using a wide range of sources. \\
+\midrule
+
+7--7.9\newline \textit{merit} &
+A good to very good answer showing most but not necessarily all of the above. \\
+\midrule
+
+6--6.9\newline \textit{pass} &
+An answer demonstrating a satisfactory understanding of the issues, with a reasonable and reasonably well-organized argument supported by a standard range of sources. The answer may display some shortcomings but no fundamental errors. \\
+\midrule
+
+\textbf{5.1--5.9} &
+\textbf{The faculty does not issue grades in this area} \\
+\midrule
+
+3--5.0\newline \textit{fail} &
+An answer that shows an inadequate understanding of the issues raised by the question, with substantial omissions or irrelevant material. Poorly conceived and poorly directed to the question. \\
+\midrule
+
+2--2.9\newline \textit{fail} &
+An attempt to answer the questions, but without any significant grasp of material or appropriate skills. \\
+\midrule
+
+0--1.9\newline \textit{ungradable} &
+No answer is offered, or an answer that is totally irrelevant, fundamentally wrong, or plagiarized. \\
+\bottomrule
+\end{longtable}
+
+% ============================================================
+% APPENDIX B: EXAMPLE THESIS ASSESSMENT FORM
+% ============================================================
+\newpage
+\section{Example Thesis Assessment Form}
+
+The process for determining the final grade of a thesis involves an initial independent assessment by two readers, followed by a comparison and discussion to agree on a final grade, which may be an average of their initial grades but is not required to be. If consensus is not reached, the thesis and reader opinions are forwarded to the Board of Examiners for a third reader's decision. Grades must be whole or half numbers within a 1.0 to 10.0 range, excluding the 5.0 to 6.0 interval unless a grade of 6.0 is given, in which case the Board of Examiners is consulted to confirm if the thesis meets the minimum passing criteria or not.
+
+\subsection*{Example Assessment Form for the BA Thesis\footnote{This assessment form is only an example. The form used for official assessment may vary in accordance with rule changes, program requirements, or other developments.}}
+
+\vspace{1em}
+
+\begin{tabularx}{\textwidth}{|L{4cm}|X|}
+\hline
+\textbf{Programme} & \textbf{Specialisation} \\
+\hline
+Date & EC \\
+\hline
+Name student & Student number \\
+\hline
+Title thesis & \\
+\hline
+First evaluator & Second evaluator \\
+\hline
+\end{tabularx}
+
+\vspace{1em}
+
+\begin{tabularx}{\textwidth}{|X|}
+\hline
+Is the thesis in your judgment free of plagiarism? \\
+\hspace{1em} $\bigcirc$ Yes \hspace{2em} $\bigcirc$ No \\
+\hline
+\end{tabularx}
+
+\vspace{1em}
+
+\begin{tabularx}{\textwidth}{|L{8cm}|X|}
+\hline
+\textbf{Criteria} (see the subcriteria below for a more detailed description) & \textbf{Assessment} \\
+\hline
+\textbf{Knowledge and insight} (contents, relation to the field)\newline Comments: &
+Optional weighting: \ldots\ \%\newline
+$\bigcirc$ excellent\newline
+$\bigcirc$ good\newline
+$\bigcirc$ satisfactory\newline
+$\bigcirc$ insufficient \\
+\hline
+\textbf{Application knowledge and insight} (methodology)\newline Comments: &
+Optional weighting: \ldots\ \%\newline
+$\bigcirc$ excellent\newline
+$\bigcirc$ good\newline
+$\bigcirc$ satisfactory\newline
+$\bigcirc$ insufficient \\
+\hline
+\textbf{Reaching conclusions} (interpretation, argumentation, conclusion)\newline Comments: &
+Optional weighting: \ldots\ \%\newline
+$\bigcirc$ excellent\newline
+$\bigcirc$ good\newline
+$\bigcirc$ satisfactory\newline
+$\bigcirc$ insufficient \\
+\hline
+\textbf{Communication} (writing skills, structure)\newline Comments: &
+Optional weighting: \ldots\ \%\newline
+$\bigcirc$ excellent\newline
+$\bigcirc$ good\newline
+$\bigcirc$ satisfactory\newline
+$\bigcirc$ insufficient \\
+\hline
+\textbf{Learning skills} (process)\newline Comments: &
+Optional weighting: \ldots\ \%\newline
+$\bigcirc$ excellent\newline
+$\bigcirc$ good\newline
+$\bigcirc$ satisfactory\newline
+$\bigcirc$ insufficient \\
+\hline
+\textbf{Formal requirements} (completion of thesis seminar, etc.)\newline Comments: & \\
+\hline
+\end{tabularx}
+
+\vspace{1em}
+
+\begin{tabularx}{\textwidth}{|X|}
+\hline
+\textbf{Summary assessment / comments} \\
+\hspace{1em} \\
+\hspace{1em} \\
+\hline
+\end{tabularx}
+
+% ============================================================
+% THESIS SUB-CRITERIA ASSESSMENT
+% ============================================================
+\newpage
+\subsection*{Thesis Sub-Criteria Assessment}
+
+The four main criteria are assessed as per the standards described below.
+
+\subsubsection*{1. Knowledge and Insight}
+
+To qualify as `satisfactory' (mark of 6) in terms of knowledge and insight, a BA thesis should:
+\begin{enumerate}[label=\Alph*., leftmargin=2em]
+    \item Show a general understanding of the relevant literature.
+    \item Provide a reasonably clear research question.
+    \item Situate the research question in a relevant and reasonably clear theoretical framework.
+\end{enumerate}
+
+To qualify as `good' (mark of 7) in terms of knowledge and insight, a BA thesis should:
+\begin{enumerate}[label=\Alph*., leftmargin=2em]
+    \item Show a clear and succinct understanding of the relevant literature and demonstrate gaps therein.
+    \item Provide a clear and academically topical research question.
+    \item Situate the research question in a clear and appropriate theoretical framework.
+\end{enumerate}
+
+To qualify as `excellent' (mark of 8) in terms of knowledge and insight, a BA thesis should:
+\begin{enumerate}[label=\Alph*., leftmargin=2em]
+    \item Demonstrate a full and insightful understanding of the relevant literature, the gaps therein, and the connections between schools of academic knowledge.
+    \item Provide a clear, academically topical, and verifiable research question.
+    \item Situate the research question in a clear, appropriate, well-organized, and properly understood theoretical framework.
+\end{enumerate}
+
+\subsubsection*{2. Application of Knowledge and Insight}
+
+To qualify as `satisfactory' (mark of 6) in terms of applying knowledge and insight, a BA thesis should:
+\begin{enumerate}[label=\Alph*., leftmargin=2em]
+    \item Outline an understandable methodology that shows how data was collected and why.
+    \item Describe the main findings in a coherent fashion that is based on the data provided.
+    \item Organize its body chapters around the data collected in a general way that connects to the research question.
+\end{enumerate}
+
+To qualify as `good' (mark of 7) in terms of applying knowledge and insight, a BA thesis should:
+\begin{enumerate}[label=\Alph*., leftmargin=2em]
+    \item Detail a clear and sound methodology based on existing approaches or research gaps and justifiably describe how data was collected and analyzed.
+    \item Describe the main findings of the thesis on the basis of the data and in line with the methodology detailed.
+    \item Organize the body chapters clearly in around the data, building upon the research question.
+\end{enumerate}
+
+To qualify as `excellent' (mark of 8) in terms of applying knowledge and insight, a BA thesis should:
+\begin{enumerate}[label=\Alph*., leftmargin=2em]
+    \item Detail a clear and sound methodology based on existing approaches or research gaps with justified data collection and analysis choices that also evaluate potential limitations and biases.
+    \item Describe the main findings of the thesis clearly and convincingly based on the research question and methodology.
+    \item Organize the body chapters in a soundly structured fashion around the data and research question to lead the reader to the conclusions drawn.
+\end{enumerate}
+
+\subsubsection*{3. Reaching Conclusions}
+
+To qualify as `satisfactory' (mark of 6) in terms of reaching conclusions, a BA thesis should:
+\begin{enumerate}[label=\Alph*., leftmargin=2em]
+    \item Clearly state its arguments.
+    \item Base its arguments on the data presented in the body chapters.
+    \item Link its arguments to the literature review and make a case for academic and/or societal relevance.
+\end{enumerate}
+
+To qualify as `good' (mark of 7) in terms of reaching conclusions, a BA thesis should:
+\begin{enumerate}[label=\Alph*., leftmargin=2em]
+    \item State its arguments clearly, succinctly, and convincingly.
+    \item Clearly base its arguments on the data presented in the body chapters and the theoretical framework outlined earlier.
+    \item Connect the arguments made to the literature reviewed and argue effectively for academic and/or societal relevance.
+\end{enumerate}
+
+To qualify as `excellent' (mark of 8) in terms of reaching conclusions, a BA thesis should:
+\begin{enumerate}[label=\Alph*., leftmargin=2em]
+    \item State its arguments clearly, forcefully, and convincingly.
+    \item Effectively base its arguments on the data and theoretical framework presented in the thesis in a sophisticated manner.
+    \item Convincingly connect the arguments made to the current academic literature, scientific debate, and/or broader social situation.
+\end{enumerate}
+
+\subsubsection*{4. Communication}
+
+To qualify as `satisfactory' (mark of 6) in terms of communication, a BA thesis should be written in reasonably clear academic English and be free of endemic grammatical or spelling errors that hinder understanding. The bibliography, citations, and/or footnotes should be formatted correctly with only minor errors.
+
+To qualify as `good' (mark of 7) in terms of communication, a BA thesis should be written in clear academic English and be free of notable grammatical or spelling errors. The bibliography, citations, and/or footnotes should be formatted correctly.
+
+To qualify as `excellent' (mark of 8) in terms of communication, a BA thesis should be written in clear and lucid academic English; it should be free of any serious grammatical or spelling errors. The bibliography and all citations and/or footnotes must be well formatted.
+
+\end{document}
