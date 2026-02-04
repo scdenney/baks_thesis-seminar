@@ -1,0 +1,369 @@
+% Week 1: Introduction & Getting Started
+% BA2 Digital Korea - Leiden University
+% Dr. Steven Denney
+
+\documentclass[aspectratio=169,11pt]{beamer}
+
+% ============================================
+% Packages
+% ============================================
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{booktabs}
+
+% Load custom theme
+\usepackage{beamerthemedigitalkorea}
+
+% ============================================
+% Metadata
+% ============================================
+\title{BA2: Digital Korea}
+\subtitle{Week 1: Introduction \& Getting Started}
+\author{Steven Denney \& Aron van de Pol}
+\institute{Korean Studies \\ Leiden University}
+\date{February 2, 2026}
+
+% ============================================
+% Document
+% ============================================
+\begin{document}
+
+% --------------------------------------------
+% Title Slide
+% --------------------------------------------
+\begin{frame}[plain,noframenumbering]
+    \titlepage
+\end{frame}
+
+% --------------------------------------------
+% Outline
+% --------------------------------------------
+\begin{frame}{Today's Agenda}
+    \begin{enumerate}
+        \item Welcome \& introductions
+        \item Course overview
+        \item What is computational text analysis?
+        \item Tools and technical setup
+        \item In-class assignments
+        \item Looking ahead
+    \end{enumerate}
+\end{frame}
+
+% ============================================
+\section{Welcome}
+% ============================================
+
+\begin{frame}{About This Course}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \textbf{The basics}
+            \begin{itemize}
+                \item 12 sessions
+                \item Mondays, 15:15--17:00
+                \item Huizinga 0.09 (DH Lab) \& Arsenaal B0.05
+            \end{itemize}
+            \vspace{0.5cm}
+            \textbf{Assessment}
+            \begin{itemize}
+                \item Participation (15\%)
+                \item Research Methods Project (35\%)
+                \item Final Paper (50\%)
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{What you'll learn}
+            \begin{itemize}
+                \item Treat text as data
+                \item Preprocess, analyze, visualize
+                \item Clustering \& classification
+                \item Topic modeling
+                \item Foundational R programming
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{About Us}
+    \textbf{Dr. Steven Denney}
+    \begin{itemize}
+        \item Assistant Professor, Korean Studies \& IR
+        \item Research: Korean studies, computational social science, DH, comparative politics
+        \item \texttt{s.c.denney@hum.leidenuniv.nl}
+    \end{itemize}
+    \vspace{0.3cm}
+    \textbf{Aron van de Pol}
+    \begin{itemize}
+        \item PhD Candidate, Centre for Digital Humanities (LUCDH)
+        \item Research: Korean studies, computer vision, modern Korean print culture
+        \item \texttt{a.m.van.de.pol@hum.leidenuniv.nl}
+    \end{itemize}
+    \vspace{0.3cm}
+    \begin{block}{Digital Humanities Lab}
+        LUCDH offers support and resources for digital methods in the humanities---a valuable resource for your studies and research.
+    \end{block}
+\end{frame}
+
+\begin{frame}{About You}
+    \begin{center}
+        \Large Next week - when I'm there in person!
+    \end{center}
+\end{frame}
+
+% ============================================
+\section{Course Overview}
+% ============================================
+
+\begin{frame}{Why Computational Text Analysis?}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \textbf{The challenge}
+            \begin{itemize}
+                \item Vast amounts of text data
+                \item Historical archives
+                \item News, social media, government documents
+                \item Too much to read manually
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{The opportunity}
+            \begin{itemize}
+                \item Discover patterns at scale
+                \item Systematic, reproducible analysis
+                \item New research questions
+                \item Complement close reading
+            \end{itemize}
+        \end{column}
+    \end{columns}
+    \vspace{0.5cm}
+    \begin{alertblock}{Key insight}
+        Computational methods don't replace careful reading---they augment it.
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{Course Trajectory}
+    \begin{center}
+        \Large To the course website!
+    \end{center}
+\end{frame}
+
+\begin{frame}{Learning Objectives}
+    By the end of this course, you will be able to:
+    \vspace{0.3cm}
+    \begin{enumerate}
+        \item \textbf{Apply} text preprocessing, descriptive analysis, clustering, classification, and topic modeling
+        \item \textbf{Practice} data management and transparency best practices
+        \item \textbf{Establish} a foundation in the R programming language
+        \item \textbf{Reflect} on the strengths and limitations of computational methods and how they apply to the study of Korea and area studies generally
+    \end{enumerate}
+\end{frame}
+
+% ============================================
+\section{What is Computational Text Analysis?}
+% ============================================
+
+\begin{frame}{Text as Data}
+    \begin{block}{Core idea}
+        Written language can be transformed into structured data that computers can process and analyze.
+    \end{block}
+    \vspace{0.5cm}
+    \textbf{This means:}
+    \begin{itemize}
+        \item Words become numbers
+        \item Meaning becomes measurable
+        \item Thousands of texts (``documents") become manageable
+        \item Hidden patterns become discoverable
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{What is a Corpus?}
+    \textbf{Corpus} (pl. \textit{corpora}): A structured collection of texts assembled for analysis.
+    \vspace{0.5cm}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \textbf{Examples}
+            \begin{itemize}
+                \item Presidential speeches
+                \item Newspaper articles
+                \item Social media posts
+                \item Historical documents
+                \item Interview transcripts
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{Key considerations}
+            \begin{itemize}
+                \item Selection criteria
+                \item Time period
+                \item Source(s)
+                \item Language(s)
+                \item Metadata
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Our Corpora}
+    \begin{block}{Course materials}
+        We will work with curated Korean-language corpora spanning historical texts, periodicals, political speeches, social media, and interview data.
+    \end{block}
+    \vspace{0.3cm}
+    \begin{itemize}
+        \item Repository: \url{https://github.com/scdenney/nlp_corpora}
+        \item Focus on Korea-relevant content
+        \item Truncated versions for classroom use
+        \item Accommodations for non-Korean readers
+        \item We will grow this repository
+    \end{itemize}
+\end{frame}
+
+% ============================================
+\section{Tools \& Technical Setup}
+% ============================================
+
+\begin{frame}{Our Toolkit}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \textbf{Primary analysis}
+            \begin{itemize}
+                \item \textbf{Orange Data Mining}
+                \item Visual, drag-and-drop interface
+                \item No programming required
+                \item Powerful text analysis widgets
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{Programming foundation}
+            \begin{itemize}
+                \item \textbf{R + RStudio}
+                \item Industry-standard for data science
+                \item \textbf{Swirl} for interactive tutorials
+                \item \textbf{DataCamp} for guided courses
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Why Orange Data Mining?}
+    \begin{itemize}
+        \item Widget-based: Build workflows visually
+        \item Accessible: Focus on concepts, not coding
+        \item Powerful: Real analysis capabilities
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Why R?}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \textbf{Practical reasons}
+            \begin{itemize}
+                \item Free and open source
+                \item Huge ecosystem of packages
+                \item Strong text analysis tools
+                \item Reproducible research
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{Career reasons}
+            \begin{itemize}
+                \item Widely used in academia
+                \item Growing in industry
+                \item Transferable skill
+                \item Gateway to Python, etc.
+            \end{itemize}
+        \end{column}
+    \end{columns}
+    \vspace{0.5cm}
+    \begin{exampleblock}{Note}
+        No prior programming experience required. We learn together.
+    \end{exampleblock}
+\end{frame}
+
+\begin{frame}{GitHub for Version Control}
+    \textbf{Why GitHub?}
+    \begin{itemize}
+        \item Track changes to your work
+        \item Collaborate and share
+        \item Industry-standard workflow
+        \item Portfolio for future work
+    \end{itemize}
+    \vspace{0.5cm}
+    \textbf{Course website:} \url{https://scdenney.github.io/ba2_digital-korea}
+\end{frame}
+
+% ============================================
+\section{In-Class Assignments}
+% ============================================
+
+\begin{frame}{Today's Tasks}
+    \begin{alertblock}{Do today, from "Getting Started"}
+        These steps ensure you have the technical foundation for the semester.
+    \end{alertblock}
+    \vspace{0.3cm}
+    \begin{enumerate}
+        \item GitHub setup
+        \item Create class repo and share with 'scdenney' (that's me)
+        \item Confirm DataCamp enrollment (check email)
+        \item Verify installations: RStudio, Swirl, Orange Data Mining (next slide)
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Software Verification}
+    \textbf{Check that you have installed:}
+    \vspace{0.3cm}
+    \begin{itemize}
+        \item[$\square$] \textbf{R} --- \url{r-project.org}
+        \item[$\square$] \textbf{RStudio} --- \url{posit.co/download/rstudio-desktop}
+        \item[$\square$] \textbf{Swirl} --- Run in R: \texttt{install.packages("swirl")}
+        \item[$\square$] \textbf{Orange Data Mining} --- \url{orangedatamining.com/download}
+    \end{itemize}
+    \vspace{0.5cm}
+    \begin{block}{Trouble?}
+        Not to worry. We'll troubleshoot together.
+    \end{block}
+\end{frame}
+
+% ============================================
+\section{Looking Ahead}
+% ============================================
+
+\begin{frame}{For Next Week}
+    \textbf{R Programming (due by start of Week 2):}
+    \begin{itemize}
+        \item Complete Swirl R Programming lessons:
+        \begin{itemize}
+            \item 1: Basic Building Blocks
+            \item 2: Workspace and Files
+            \item 4: Vectors
+            \item 6: Subsetting Vectors
+            \item 7: Matrices and Data Frames
+            \item 12: Looking at Data
+        \end{itemize}
+    \end{itemize}
+    \vspace{0.3cm}
+    \textbf{Week 2 topic:} Foundations of Computational Text Analysis
+\end{frame}
+
+\begin{frame}{For Next Week}
+    \textbf{For Week 2:}
+    \vspace{0.3cm}
+    \begin{itemize}
+        \item Grimmer, Roberts, and Stewart --- Chapter 2: ``Social Science Research and Text Analysis'' (will be provided via email)
+        \item Markdown explainer (on course website, under ``Getting Started'')
+    \end{itemize}
+    \vspace{0.5cm}
+    \textbf{Orange Data Mining Tutorials:}
+    \begin{itemize}
+        \item Getting Started 01--04
+        \item \url{https://www.youtube.com/playlist?list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy}
+    \end{itemize}
+    \vspace{0.5cm}
+    \textbf{Bookmark this:}
+    \begin{itemize}
+        \item Orange Widget Catalog: \url{https://orangedatamining.com/widget-catalog/}
+        \item Your go-to reference when learning new widgets or troubleshooting
+    \end{itemize}
+\end{frame}
+
+\end{document}
