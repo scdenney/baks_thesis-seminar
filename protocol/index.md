@@ -7,7 +7,7 @@ title: Thesis Protocol
 
 This page provides a basic overview of the expectations and assessment criteria for a thesis in the Leiden University BA program in Koreastudies. For complete information, please download the full document.
 
-**Download:** [Complete Thesis Protocol (PDF)]({{ '/thesis_protocol/BAKS Thesis Protocol_2025.pdf' | relative_url }})
+**Download:** [Complete Thesis Protocol (PDF)]({{ '/protocol/BAKS Thesis Protocol_2025.pdf' | relative_url }})
 
 ---
 
