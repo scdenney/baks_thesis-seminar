@@ -1,0 +1,31 @@
+# Project context (not for public repo)
+CLAUDE.md
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Source documents (optional - uncomment to exclude)
+# *.docx
+
+# Jekyll build (if building locally)
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
