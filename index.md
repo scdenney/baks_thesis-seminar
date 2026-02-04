@@ -6,7 +6,7 @@ title: Home
 # Overview
 
 **Course:** BA3 Korean Studies, Leiden University<br>
-**Instructor:** Dr. Steven Denney (stevencdenney@gmail.com)<br>
+**Instructor:** Dr. Steven Denney ([s.c.denney@hum.leidenuniv.nl](mailto:s.c.denney@hum.leidenuniv.nl))<br>
 **Time:** Fridays, 09:15-11:00<br>
 **Location:** Lipsius 2.05, Workgroup 103<br>
 **Duration:** February 06 - June 01, 2025
