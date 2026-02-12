@@ -5,9 +5,7 @@ title: Presentations
 
 # Presentations
 
-Lecture slides are posted here after each session.
-
-*Slides will be available after the corresponding lecture.*
+Lecture slides are posted here just before and sometimes after each session.
 
 ---
 
