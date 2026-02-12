@@ -16,6 +16,7 @@ Desktop.ini
 
 # Source documents
 *.docx
+previous_*.pdf
 
 # Jekyll build (if building locally)
 _site/
