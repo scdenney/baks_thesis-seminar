@@ -1,0 +1,190 @@
+% Thesis Seminar Beamer Theme
+% Clean academic style with Wes Anderson-inspired soft palette
+% For BA-Eindwerkstuk Seminar course
+
+\ProvidesPackage{beamerthemethesis}[2026/02/04 Thesis Seminar Beamer Theme]
+
+% ============================================
+% Color Palette - Soft Wes Anderson
+% ============================================
+
+% Primary accent - muted navy (softer than Leiden blue)
+\definecolor{AccentBlue}{HTML}{4A5568}
+
+% Warm tones
+\definecolor{WarmCream}{HTML}{FAF8F5}
+\definecolor{DustyRose}{HTML}{C9A9A6}
+\definecolor{Terracotta}{HTML}{C4846C}
+
+% Cool tones
+\definecolor{SageGreen}{HTML}{87A878}
+\definecolor{SoftTeal}{HTML}{6B9A9B}
+\definecolor{SlateBlue}{HTML}{7189A8}
+
+% Neutrals
+\definecolor{TextDark}{HTML}{2D3748}
+\definecolor{TextMuted}{HTML}{718096}
+\definecolor{LightGray}{HTML}{E2E8F0}
+
+% ============================================
+% Theme Settings
+% ============================================
+
+\mode<presentation>
+
+\useinnertheme{default}
+\useoutertheme{default}
+
+% Remove navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+% ============================================
+% Colors
+% ============================================
+
+% Structure
+\setbeamercolor{structure}{fg=AccentBlue}
+\setbeamercolor{frametitle}{fg=AccentBlue}
+\setbeamercolor{framesubtitle}{fg=TextMuted}
+
+% Title page
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{subtitle}{fg=WarmCream}
+\setbeamercolor{author}{fg=TextDark}
+\setbeamercolor{institute}{fg=TextMuted}
+\setbeamercolor{date}{fg=TextMuted}
+
+% Background - clean white
+\setbeamercolor{background canvas}{bg=white}
+
+% Blocks
+\setbeamercolor{block title}{fg=white,bg=SlateBlue}
+\setbeamercolor{block body}{fg=TextDark,bg=LightGray}
+
+\setbeamercolor{block title example}{fg=white,bg=SageGreen}
+\setbeamercolor{block body example}{fg=TextDark,bg=LightGray}
+
+\setbeamercolor{block title alerted}{fg=white,bg=Terracotta}
+\setbeamercolor{block body alerted}{fg=TextDark,bg=LightGray}
+
+% Items
+\setbeamercolor{item}{fg=AccentBlue}
+\setbeamercolor{subitem}{fg=SoftTeal}
+\setbeamercolor{subsubitem}{fg=TextMuted}
+
+% Footer
+\setbeamercolor{footline}{fg=TextMuted}
+
+% ============================================
+% Fonts
+% ============================================
+
+\setbeamerfont{title}{size=\Large,series=\bfseries}
+\setbeamerfont{subtitle}{size=\normalsize}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamerfont{framesubtitle}{size=\small}
+\setbeamerfont{author}{size=\normalsize}
+\setbeamerfont{institute}{size=\small}
+\setbeamerfont{date}{size=\small}
+\setbeamerfont{footline}{size=\tiny}
+
+% ============================================
+% Title Page Template - Clean with rounded banner
+% ============================================
+
+\setbeamertemplate{title page}{
+    \vspace{1.5cm}
+    \begin{center}
+        % Rounded title banner
+        \begin{tikzpicture}
+            \node[
+                rectangle,
+                rounded corners=4pt,
+                fill=AccentBlue,
+                minimum width=0.85\paperwidth,
+                minimum height=1.8cm,
+                inner sep=12pt
+            ] {
+                \begin{minipage}{0.8\paperwidth}
+                    \centering
+                    {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+                    \ifx\insertsubtitle\empty\else
+                        \vspace{0.2cm}
+                        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}
+                    \fi
+                \end{minipage}
+            };
+        \end{tikzpicture}
+
+        \vspace{0.8cm}
+        {\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par}
+        \vspace{0.2cm}
+        {\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute\par}
+        \vspace{0.5cm}
+        {\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate\par}
+    \end{center}
+}
+
+% ============================================
+% Frame Title Template - Clean and simple
+% ============================================
+
+\setbeamertemplate{frametitle}{
+    \vspace{0.4cm}
+    \usebeamerfont{frametitle}\usebeamercolor[fg]{frametitle}\insertframetitle
+    \ifx\insertframesubtitle\empty\else
+        \\[0.1cm]
+        {\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle}
+    \fi
+    \vspace{0.2cm}
+    {\color{DustyRose}\hrule height 0.8pt}
+    \vspace{0.3cm}
+}
+
+% ============================================
+% Footline Template
+% ============================================
+
+\setbeamertemplate{footline}{
+    \hbox{%
+        \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1ex,left,leftskip=0.5cm]{footline}%
+            \usebeamerfont{footline}BA-Eindwerkstuk Seminar
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1ex,right,rightskip=0.5cm]{footline}%
+            \usebeamerfont{footline}\insertframenumber{} / \inserttotalframenumber
+        \end{beamercolorbox}%
+    }
+    \vskip0pt
+}
+
+% ============================================
+% Item Templates
+% ============================================
+
+\setbeamertemplate{itemize item}{\color{AccentBlue}\textbullet}
+\setbeamertemplate{itemize subitem}{\color{SoftTeal}\textendash}
+\setbeamertemplate{itemize subsubitem}{\color{TextMuted}\textasteriskcentered}
+
+\setbeamertemplate{enumerate item}{\color{AccentBlue}\insertenumlabel.}
+\setbeamertemplate{enumerate subitem}{\color{SoftTeal}\insertsubenumlabel.}
+
+% ============================================
+% Section Page Template - Simple and clean
+% ============================================
+
+\setbeamertemplate{section page}{
+    \begin{center}
+        \vspace{2.5cm}
+        {\color{AccentBlue}\Huge\bfseries\insertsectionhead\par}
+        \vspace{0.3cm}
+        {\color{DustyRose}\rule{3cm}{0.8pt}}
+    \end{center}
+}
+
+\AtBeginSection{
+    \begin{frame}[plain,noframenumbering]
+        \sectionpage
+    \end{frame}
+}
+
+\mode<all>

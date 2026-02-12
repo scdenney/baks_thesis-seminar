@@ -1,0 +1,479 @@
+% Week 2: Data and Sources – Generation, Collection, and FAIR Principles
+% BA-Eindwerkstuk Seminar - Leiden University
+% Dr. Steven Denney
+
+\documentclass[aspectratio=169,11pt]{beamer}
+
+% ============================================
+% Packages
+% ============================================
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{booktabs}
+
+% Load custom theme
+\usepackage{beamerthemethesis}
+
+% ============================================
+% Metadata
+% ============================================
+\title{BA-Eindwerkstuk Seminar}
+\subtitle{Week 2: Data and Sources -- Generation, Collection, and FAIR Principles}
+\author{Dr. Steven Denney}
+\institute{Korean Studies \\ Leiden University}
+\date{February 13, 2026}
+
+% ============================================
+% Document
+% ============================================
+\begin{document}
+
+% --------------------------------------------
+% Title Slide
+% --------------------------------------------
+\begin{frame}[plain,noframenumbering]
+    \titlepage
+\end{frame}
+
+% ============================================
+\section{Review from Week 1}
+% ============================================
+
+\begin{frame}{Exercise \#1: Share Your Question}
+    \textbf{From last week's homework:}
+    \vspace{0.3cm}
+    \begin{enumerate}
+        \item What is your research question (or top candidate)?
+        \item What is the motivation / problem / gap?
+    \end{enumerate}
+    \vspace{0.5cm}
+    \begin{block}{Discussion}
+        Let's hear from a few of you. We'll revisit these questions at the end of today's class---they may shift once you think about data.
+    \end{block}
+\end{frame}
+
+\begin{frame}{What Makes a Good Question -- Revisited}
+    Recall the five characteristics:
+    \vspace{0.3cm}
+    \begin{enumerate}
+        \item \textbf{Specific} --- Clearly defined scope and boundaries
+        \item \textbf{Open-ended} --- Cannot be answered with yes/no
+        \item \textbf{Researchable} --- Can be investigated with available evidence
+        \item \textbf{Relevant} --- Contributes to scholarly understanding
+        \item \textbf{Personal} --- Connects to your genuine interests
+    \end{enumerate}
+    \vspace{0.3cm}
+    Today we focus especially on \#3: \textbf{researchable}. A brilliant question without the right data is unanswerable.
+\end{frame}
+
+\begin{frame}{Questions to Avoid}
+    \begin{alertblock}{Problematic Question Types}
+        \begin{itemize}
+            \item \textbf{Leading} --- Assumes the answer before research begins
+            \item \textbf{Loaded} --- Contains hidden value judgments
+            \item \textbf{Yes/No} --- Too narrow; closes off inquiry
+            \item \textbf{Overly causal} --- Often too ambitious for a BA thesis
+            \item \textbf{Unfocused} --- Too broad to research in 10,000 words
+        \end{itemize}
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{Diagnosing Bad Questions}
+    \footnotesize
+    \begin{table}
+        \begin{tabular}{p{0.12\textwidth}p{0.38\textwidth}p{0.38\textwidth}}
+            \toprule
+            \textbf{Problem} & \textbf{Bad Example} & \textbf{Better Version} \\
+            \midrule
+            Leading & ``Why has South Korea's education system failed its students?'' & ``How do South Korean university students evaluate the pressures of the national college entrance system?'' \\
+            \addlinespace
+            Loaded & ``Why is K-pop so much better than Western pop music?'' & ``In what ways do K-pop production strategies differ from those used in the U.S. music industry?'' \\
+            \addlinespace
+            Yes/No & ``Did the Sewol Ferry disaster change Korean politics?'' & ``How did civic responses to the Sewol Ferry disaster reshape activist strategies in South Korea?'' \\
+            \addlinespace
+            Causal & ``How did Confucianism cause Korea's economic development?'' & ``What role do Confucian values play in South Korean corporate governance practices?'' \\
+            \addlinespace
+            Unfocused & ``What is the Korean Wave?'' & ``How do Korean cosmetics brands use social media influencers to build consumer trust in Southeast Asia?'' \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+% ============================================
+\section{From Question to Data}
+% ============================================
+
+\begin{frame}{Today's Agenda}
+    \begin{enumerate}
+        \item Review of Week 1 and research questions
+        \item The question--data relationship
+        \item Data collection and sources
+        \item Using Korean-language sources
+        \item FAIR principles for thinking about data
+        \item Workshop: Mapping your data
+    \end{enumerate}
+    \vspace{0.5cm}
+    \begin{block}{Today's Focus}
+        What is your data, where does it come from, and how will you get it? We set aside analytics for now and concentrate on the \textit{foundations} of your empirics.
+    \end{block}
+\end{frame}
+
+\begin{frame}{The Iterative Research Process}
+    \begin{center}
+        \begin{tikzpicture}[
+            box/.style={rectangle, draw=AccentBlue, fill=LightGray, rounded corners, minimum width=3.2cm, minimum height=1cm, align=center, font=\small},
+            arrow/.style={->, thick, AccentBlue}
+        ]
+            \node[box] (question) at (0,0) {Research\\Question};
+            \node[box] (framework) at (5,0) {Analytical\\Framework};
+            \node[box] (data) at (2.5,-2.5) {Data};
+
+            \draw[arrow, bend left=20] (question) to (framework);
+            \draw[arrow, bend left=20] (framework) to (question);
+            \draw[arrow, bend left=20] (framework) to (data);
+            \draw[arrow, bend left=20] (data) to (framework);
+            \draw[arrow, bend left=20] (data) to (question);
+            \draw[arrow, bend left=20] (question) to (data);
+        \end{tikzpicture}
+    \end{center}
+    \vspace{0.3cm}
+    You will move \textit{iteratively} between question, framework, and data. This is normal. Having a somewhat \textbf{data-driven question} is not a bad thing---it's often how real research works.
+\end{frame}
+
+\begin{frame}{Good Questions Need the Right Data}
+    \begin{block}{The Core Challenge}
+        A good question without the right kind of data cannot be answered. A question must be answerable \textit{in practice}, not just in theory.
+    \end{block}
+    \vspace{0.5cm}
+    \textbf{Ask yourself:}
+    \begin{itemize}
+        \item What evidence would I need to answer this question?
+        \item Does that evidence actually exist?
+        \item Can I realistically access it within the timeframe of a BA thesis?
+        \item If not---how should I adjust my question?
+    \end{itemize}
+\end{frame}
+
+% ============================================
+\section{Data Collection \& Sources}
+% ============================================
+
+\begin{frame}{Primary vs. Secondary Sources}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \textbf{Primary sources}
+            \begin{itemize}
+                \item Original, first-hand materials from the time of an event or topic
+                \item Created by participants or direct observers
+                \item \textit{Examples:} government documents, newspaper articles, interviews, diaries, speeches, legal texts
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{Secondary sources}
+            \begin{itemize}
+                \item Analyses or interpretations of primary sources
+                \item Created after the fact by other scholars
+                \item \textit{Examples:} academic journal articles, textbooks, book reviews, historiographies
+            \end{itemize}
+        \end{column}
+    \end{columns}
+    \vspace{0.5cm}
+    \begin{alertblock}{Note}
+        Your thesis needs \textbf{both}. Secondary sources frame your literature review; primary sources form your empirical evidence.
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{Qualitative vs. Quantitative Data}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \textbf{Qualitative data}
+            \begin{itemize}
+                \item Descriptive, non-numerical
+                \item Captures experiences, meanings, context
+                \item Answers ``how'' or ``why'' questions
+                \item \textit{Examples:} interview transcripts, ethnographic notes, media texts, archival documents
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{Quantitative data}
+            \begin{itemize}
+                \item Numerical, measurable
+                \item Can be counted or statistically analyzed
+                \item Answers ``what,'' ``how many,'' ``how much''
+                \item \textit{Examples:} survey results, statistical datasets, frequency counts, polling data
+            \end{itemize}
+        \end{column}
+    \end{columns}
+    \vspace{0.3cm}
+    Most BA theses in Korean Studies rely primarily on \textbf{qualitative data}, but some mix both approaches.
+\end{frame}
+
+\begin{frame}{Types of Data -- More Common in BAKS}
+    \textbf{Newspapers \& Digital Media (Written)}
+    \begin{itemize}
+        \item \textit{Best for:} Tracking political discourse, media framing, public opinion over time
+        \item \textit{Examples:} Chosun Ilbo vs. Hankyoreh coverage of North Korea, Naver News comments on political events
+        \item \textit{Challenges:} Bias in sources, selecting a representative sample, data retrieval
+    \end{itemize}
+    \vspace{0.3cm}
+    \textbf{Digital Media (YouTube, Blogs, Social Media)}
+    \begin{itemize}
+        \item \textit{Best for:} Analyzing culture, online activism, public engagement
+        \item \textit{Examples:} YouTube videos on K-pop marketing or North Korean propaganda, Naver blogs on historical memory
+        \item \textit{Challenges:} Platform restrictions, data ethics, fast-changing content
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Types of Data -- Less Common in BAKS}
+    \textbf{Interviews}
+    \begin{itemize}
+        \item \textit{Best for:} Studying personal experiences, expert opinions, community perspectives
+        \item \textit{Examples:} Interviews with activists on democratization, film directors on Korean cinema, Zainichi Koreans on identity
+        \item \textit{Challenges:} Language proficiency, access to participants, ethical considerations
+    \end{itemize}
+    \vspace{0.3cm}
+    \textbf{Archival Research}
+    \begin{itemize}
+        \item \textit{Best for:} Historical studies, government policy analysis, institutional research
+        \item \textit{Examples:} National Archives records on Cold War policies, colonial-era legal documents
+        \item \textit{Challenges:} Misperception of what an archive is today (e.g., Naver, Wilson Center Digital Archive); language (e.g., Hanja)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Using Korean-Language Sources}
+    \textbf{Authenticity and depth:} Korean-language sources provide local/Korean-based perspectives. They are of \textit{particular importance} and should play a larger role in Korean Studies scholarship.
+    \vspace{0.3cm}
+
+    \textbf{Avoiding bias:} Relying only on English sources can skew research. Using Korean sources helps balance this and fill in gaps.
+    \vspace{0.3cm}
+
+    \textbf{Academic expectation:} Students and scholars of Korean Studies are expected to engage with Korean-language materials.
+    \vspace{0.5cm}
+    \begin{alertblock}{Practical Tip}
+        Start identifying Korean-language sources \textit{now}. Don't wait until the writing stage---they take more time to locate, read, and integrate.
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}[plain,noframenumbering]
+    \vspace{2.5cm}
+    \begin{center}
+        {\color{AccentBlue}\Huge\bfseries Break}
+        \vspace{0.3cm}
+
+        {\color{DustyRose}\rule{3cm}{0.8pt}}
+        \vspace{0.5cm}
+
+        {\color{TextMuted}\large 10 minutes}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Think About Your Sources}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \textbf{Option A: Build a corpus}
+            \begin{itemize}
+                \item Can you gather, collect, scrape, or locate your sources in a structured way?
+                \item If so---do it! Build a corpus for computational text / DH analysis
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{Option B: Close reading}
+            \begin{itemize}
+                \item You don't have to go the ``big data'' route
+                \item You can read 12 sources closely and do excellent research
+                \item What matters is that your material is \textbf{manageable} and \textbf{organized}
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% ============================================
+\section{Workshop: What Is Your Data?}
+% ============================================
+
+\begin{frame}{Mapping Your Data (10 minutes)}
+    \textbf{Exercise: For your research question, answer the following:}
+    \vspace{0.3cm}
+    \begin{enumerate}
+        \item \textbf{What is your data?}
+        \begin{itemize}
+            \item What type of evidence do you need? (texts, interviews, statistics, archival documents, media content...)
+        \end{itemize}
+        \item \textbf{Where does it come from?}
+        \begin{itemize}
+            \item What is the source? (a specific newspaper, database, archive, organization...)
+        \end{itemize}
+        \item \textbf{How will you get it?}
+        \begin{itemize}
+            \item Is it freely accessible online? Do you need institutional access? Do you need to generate it yourself (e.g., interviews)?
+        \end{itemize}
+        \item \textbf{How will you organize it?}
+        \begin{itemize}
+            \item How will you store, label, and keep track of your materials?
+        \end{itemize}
+    \end{enumerate}
+    \vspace{0.3cm}
+    \textit{If you can't answer these questions, your research question may need adjusting.}
+\end{frame}
+
+\begin{frame}{Discussion: Does Your Question Still Work?}
+    After mapping your data, consider:
+    \vspace{0.3cm}
+    \begin{itemize}
+        \item Does the data you need actually exist and can you access it?
+        \item Is the scope realistic for a 10,000-word thesis?
+        \item Do you need to \textbf{narrow} your question to match available data?
+        \item Or do you need to \textbf{broaden} it because the data opens new possibilities?
+    \end{itemize}
+    \vspace{0.5cm}
+    \begin{exampleblock}{Remember}
+        Adjusting your question in response to data availability is not a weakness---it is good research practice. The question and the data evolve together.
+    \end{exampleblock}
+\end{frame}
+
+% ============================================
+\section{FAIR Principles}
+% ============================================
+
+\begin{frame}{Why Think Structurally About Data?}
+    Once you know \textit{what} your data is, you need a framework for managing it well.
+    \vspace{0.5cm}
+
+    The \textbf{FAIR principles} provide a way to think structurally about your data---not just for others, but for \textit{yourself}.
+    \vspace{0.5cm}
+
+    \begin{block}{FAIR = Findable, Accessible, Interoperable, Reusable}
+        Originally developed for research data management in the sciences, but the principles apply equally to humanities research.
+    \end{block}
+\end{frame}
+
+\begin{frame}{Findable \& Accessible}
+    \textbf{Findable:} Your data should be easy to find---by others \textit{and} by yourself.
+    \begin{itemize}
+        \item Use clear identifiers and rich descriptions
+        \item Assign meaningful file names, not \texttt{data\_final\_v3\_REAL.docx}
+        \item Provide metadata: keywords, author, date, source
+    \end{itemize}
+    \vspace{0.5cm}
+    \textbf{Accessible:} Once found, data should be obtainable under well-defined conditions.
+    \begin{itemize}
+        \item Store data in a reliable location (cloud backup, repository)
+        \item Note access conditions: Is it public? Restricted? Behind a paywall?
+        \item Even if data can't be fully open, information on \textit{how} to access it should be clear
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Interoperable \& Reusable}
+    \textbf{Interoperable:} Data should be in understandable formats that allow it to be combined with other data.
+    \begin{itemize}
+        \item Use common, open file formats (e.g., CSV, plain text, UTF-8 encoding for Korean)
+        \item Use standardized data schemas where possible
+        \item Think about whether someone else could combine your data with theirs
+    \end{itemize}
+    \vspace{0.5cm}
+    \textbf{Reusable:} Data should be well-documented and licensed for reuse.
+    \begin{itemize}
+        \item Provide context: methods, definitions, collection dates
+        \item Proper documentation ensures that \textit{you in a few months} can still understand your own data
+        \item Choose open licenses or sharing agreements where appropriate
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{FAIR in Practice: Your Thesis}
+    \textbf{What does FAIR look like for a BA thesis?}
+    \vspace{0.3cm}
+    \begin{table}
+        \small
+        \begin{tabular}{ll}
+            \toprule
+            \textbf{Principle} & \textbf{What You Can Do} \\
+            \midrule
+            Findable & Organize files with clear names and folders \\
+            Accessible & Back up your data; note where it came from \\
+            Interoperable & Use standard formats (UTF-8, CSV, PDF) \\
+            Reusable & Document your collection methods in your thesis \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    \vspace{0.3cm}
+    \begin{block}{Further Reading}
+        \small
+        \url{https://en.wikipedia.org/wiki/FAIR_data}\\
+        \url{https://www.library.universiteitleiden.nl/researchers/data-management/fair-data}
+    \end{block}
+\end{frame}
+
+% ============================================
+\section{Where It All Fits}
+% ============================================
+
+\begin{frame}{Aligning Question, Data, and Methods}
+    The lesson of Mullaney and Rea Chapter 3: a clear question and a matching method are the twin pillars of success.
+    \vspace{0.5cm}
+
+    \textbf{What you should show your reader (especially for Assignment \#1):}
+    \begin{enumerate}
+        \item Here is my \textbf{question}
+        \item Here's \textbf{why it is important} (connecting it to the problem and gap in knowledge---and the literature to which it belongs)
+        \item Here's what \textbf{data} I will collect to answer my question
+        \item Here's \textbf{how} I will collect and analyze that data (\textit{methods / analysis})
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Where Data Fits in the Thesis}
+    \begin{enumerate}
+        \item \textbf{Introduction} (question, motivation, data \& methods)
+        \item \textbf{Literature Review} (situating the question; exploring methods, theories, etc.)
+        \item \textbf{Methodology / Analytical Framework}
+        \begin{itemize}
+            \item What data you collected, how you collected it, how you stored it (FAIR comes in here), and how---in as precise language as possible---you analyzed it
+            \item This should state clearly \textbf{how} you will answer your question
+        \end{itemize}
+        \item \textbf{Findings}
+        \item \textbf{Discussion and Conclusion}
+    \end{enumerate}
+    \vspace{0.3cm}
+    \textit{See the Thesis Protocol on Brightspace for more information.}
+\end{frame}
+
+% ============================================
+\section{Exercise \& Next Steps}
+% ============================================
+
+\begin{frame}{Exercise \#2: Draft Your Data Collection Plan}
+    \textbf{Write a short plan (bring to Week 3) that addresses:}
+    \vspace{0.3cm}
+    \begin{enumerate}
+        \item \textbf{Your research question} (revised if needed after today)
+        \item \textbf{Type of data} you intend to collect
+        \item \textbf{Source(s)} --- Where does the data come from?
+        \item \textbf{Access} --- How will you obtain it?
+        \item \textbf{Organization} --- How will you store and manage it?
+        \item \textbf{FAIR alignment} --- How does your plan align with the FAIR principles (to the extent possible at this stage)?
+    \end{enumerate}
+    \vspace{0.3cm}
+    \textit{This is exploratory. The goal is to start thinking concretely about your empirical foundation.}
+\end{frame}
+
+\begin{frame}{Looking Ahead}
+    \textbf{Week 3: Conducting a Literature Review}
+    \begin{itemize}
+        \item Purpose and structure of a literature review
+        \item How to connect your lit review to your question, gap, and framework
+        \item Strategies for organizing and synthesizing literature
+    \end{itemize}
+    \vspace{0.5cm}
+    \textbf{Key Dates:}
+    \begin{itemize}
+        \item Assignment \#1 due: March 13, 2026
+        \item Start thinking about your supervisor and schedule a meeting
+    \end{itemize}
+    \vspace{0.3cm}
+    \begin{block}{Course Website}
+        \url{https://scdenney.github.io/baks_thesis-seminar/}
+    \end{block}
+\end{frame}
+
+\end{document}

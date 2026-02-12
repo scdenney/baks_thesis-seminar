@@ -1,0 +1,6 @@
+#plan for week02
+
+- review week01 and review the prep i asked students to do at end of week01
+- review in particular what makes a good question -- and what doesn't. what to avoid. review questions to avoid and then let's come up with some examples of all bad types of questions and then how to fix them.
+- then let's transition to the meat of the lecture. see the 'previous_week02_2025.pdf' for content inspiration. i think i would like to truncate that some. i want to really discuss the foundations of their empirics and recognize that good questions without the right kind of data can't be answered, so there is some balance to be struck here. you will move somewhat iteratively between question, framework, and data and especially between question and data. having a somewhat data-drive question is not a bad thing. then, we should do some in-class exercises where they determine what their data is: what is the source, where does it come from, how will they get it, how will they organize it. set aside analytics for now and just focus on data -- and then we can link FAIR principles to this as a way to think structurally about data.
+- then, use the same theme and formatting we did for week01 and make me a .tex slide for beamer use.
