@@ -17,6 +17,18 @@ Desktop.ini
 # Source documents
 *.docx
 previous_*.pdf
+previous_to-use/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
 
 # Jekyll build (if building locally)
 _site/

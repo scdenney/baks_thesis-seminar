@@ -1,0 +1,275 @@
+% !TEX program = lualatex
+%--------------------------------------------------------------
+% Analytical Framework Guidelines
+% BA Korean Studies Thesis Seminar — Spring 2026
+% Prepared by S.C. Denney
+%--------------------------------------------------------------
+\documentclass[11pt,a4paper]{article}
+
+% ----- Fonts and encoding -----
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}[
+  SmallCapsFont = {Latin Modern Roman Caps}
+]
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}
+
+% ----- Layout -----
+\usepackage[
+  top=2.5cm,
+  bottom=2.5cm,
+  left=2.8cm,
+  right=2.8cm,
+  headheight=14pt
+]{geometry}
+
+% ----- Core packages -----
+\usepackage{microtype}          % fine typography
+\usepackage{parskip}            % blank line between paragraphs, no indent
+\usepackage{enumitem}           % list customization
+\usepackage{booktabs}           % professional tables
+\usepackage{xcolor}             % color definitions
+\usepackage{hyperref}           % clickable links
+\usepackage{fancyhdr}           % headers and footers
+\usepackage{titlesec}           % section formatting
+\usepackage{tcolorbox}          % framed example boxes
+
+% ----- Colors -----
+\definecolor{leidenblu}{HTML}{002147}
+\definecolor{leidengold}{HTML}{C4A000}
+\definecolor{examplebg}{HTML}{F5F5F0}
+\definecolor{exampleframe}{HTML}{B0B0A0}
+
+% ----- Hyperref setup -----
+\hypersetup{
+  colorlinks  = true,
+  linkcolor   = leidenblu,
+  urlcolor    = leidenblu,
+  citecolor   = leidenblu,
+  pdftitle    = {Analytical Framework Guidelines},
+  pdfauthor   = {S.C. Denney},
+}
+
+% ----- Header / footer -----
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Analytical Framework Guidelines}}
+\fancyhead[R]{\small\textsc{BA Thesis Seminar — Spring 2026}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ----- Section formatting -----
+\titleformat{\section}
+  {\large\bfseries\color{leidenblu}}
+  {\thesection.}{0.5em}{}
+\titleformat{\subsection}
+  {\normalsize\bfseries\color{leidenblu}}
+  {\thesubsection}{0.5em}{}
+\titlespacing*{\section}{0pt}{1.8ex plus .4ex minus .2ex}{0.8ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{1.2ex plus .3ex minus .1ex}{0.4ex plus .1ex}
+
+% ----- Example box environment -----
+\newtcolorbox{examplebox}[1][]{%
+  colback    = examplebg,
+  colframe   = exampleframe,
+  boxrule    = 0.5pt,
+  arc        = 2pt,
+  left       = 8pt,
+  right      = 8pt,
+  top        = 6pt,
+  bottom     = 6pt,
+  fontupper  = \small,
+  before upper = {\textit{Example:}\enspace},
+  #1
+}
+
+% ----- Tip box environment (for final tips) -----
+\newtcolorbox{tipbox}[1][]{%
+  colback    = leidenblu!4,
+  colframe   = leidenblu!50,
+  boxrule    = 0.5pt,
+  arc        = 2pt,
+  left       = 8pt,
+  right      = 8pt,
+  top        = 6pt,
+  bottom     = 6pt,
+  #1
+}
+
+% ----- Footnote styling -----
+\usepackage[hang,flushmargin]{footmisc}
+
+%--------------------------------------------------------------
+\begin{document}
+
+% ----- Title block -----
+\begin{center}
+  {\LARGE\bfseries\color{leidenblu} Analytical Framework Guidelines}\\[8pt]
+  {\normalsize Prepared by S.\,C.\ Denney}\\[3pt]
+  {\small Workgroup 103 \,·\, BA Korean Studies Thesis Seminar \,·\, Spring 2026}
+\end{center}
+
+\vspace{0.8em}
+
+\noindent
+This handout provides a structured guide for writing the analytical framework section of your BA thesis. The nine sections below offer a logical sequence---from theoretical grounding to methodological execution---that helps you build a coherent link between your research question, your data, and your analysis.
+
+\medskip
+
+\noindent
+\textbf{A note on adaptability.} Not every section will be equally relevant to every project. A student conducting historical archival research will emphasize different elements than a student performing quantitative content analysis. Treat the structure below as a flexible template: expand the sections that matter most to your work, condense or combine those that are less central, and always let your research question drive the organization.
+
+\medskip
+
+\noindent
+The examples throughout this handout use newspaper and media analysis as a running illustration, but the principles apply to any BA thesis topic in Korean Studies.
+
+%--------------------------------------------------------------
+\section{Introduction --- Purpose of the Framework}
+
+Begin by briefly restating your core research question and objectives. Explain that the analytical framework guides how you interpret your data and answer your research question. Emphasize the interdisciplinary nature of Korean Studies and why you chose the specific theories, concepts, or approaches that organize your analysis.
+
+\begin{examplebox}
+``This section outlines the approach used to analyze the representation of social movements in South Korean newspapers. It connects discourse analysis with theories of media framing to address how newspapers depict collective action in contemporary Korea.''
+\end{examplebox}
+
+%--------------------------------------------------------------
+\section{Theoretical Underpinnings --- Relevant Theories and Concepts}
+
+Identify and define the main theories and concepts that shape your study. These may come from a range of disciplines---Media Studies, Political Science, Sociology, Cultural Studies, History, or any other field relevant to Korean Studies. For each theoretical lens, provide a concise definition or statement of its core principles. This section should serve as a bridge between your literature review and the rest of the analytical framework.
+
+Consider which of the following (or other) perspectives inform your work:
+
+\begin{itemize}[nosep]
+  \item \textbf{Framing theory} --- if your project examines how information is presented or represented.
+  \item \textbf{Discourse analysis concepts} --- if you are investigating language use, power relations, or ideological structures in texts.
+  \item \textbf{Cultural or historical context} --- if historical perspectives or socio-cultural factors are central to your argument.
+\end{itemize}
+
+\begin{examplebox}
+``This study draws on Entman's (1993) concept of framing, examining how language choices in newspaper headlines and editorials highlight or downplay particular perspectives on student protests. By employing discourse analysis principles, we investigate how ideological positions manifest in textual choices, such as word selection and sourcing.''\footnotemark
+\end{examplebox}
+
+\footnotetext{Entman, R.\,M.\ (1993). Framing: Toward clarification of a fractured paradigm. \textit{Journal of Communication}, 43(4), 51--58.}
+
+%--------------------------------------------------------------
+\section{Research Design and Rationale --- Choice of Methods}
+
+Connect your research design to both the research question and the theoretical perspectives described above. Justify the selection of your specific method or methods---whether discourse analysis, content analysis, historical analysis, interview-based research, or another approach---by explaining how they help uncover insights aligned with your theoretical framework.
+
+\begin{examplebox}
+``Due to the text-based nature of newspaper articles, I adopt content analysis to identify frequent terms and discourse analysis to interpret how these terms convey ideological stances. This combined approach aligns with media framing theory, which posits that textual elements shape readers' understanding of events.''
+\end{examplebox}
+
+%--------------------------------------------------------------
+\section{Sources and Selection Criteria --- Data and Storage}
+
+Outline the data sources you will analyze, along with the criteria for selecting them. Be specific. For text-based projects, address the following; adapt the categories to your own source material:
+
+\begin{itemize}[nosep]
+  \item \textbf{Titles or sources:} Which specific publications, archives, databases, or collections?
+  \item \textbf{Date range:} Which time period and why?
+  \item \textbf{Language:} Korean-language sources, English-language sources, or both?
+  \item \textbf{Sampling rationale:} Why these sources and not others?
+  \item \textbf{Storage and organization:} How did you collect and store your data? (Remember FAIR principles: Findable, Accessible, Interoperable, Reusable.)
+\end{itemize}
+
+\begin{examplebox}
+``I examine editorials from four major South Korean newspapers published between 2015 and 2020 to capture evolving media discourse on labor strikes. These newspapers span different ideological orientations, facilitating comparative analysis of framing styles.''
+\end{examplebox}
+
+%--------------------------------------------------------------
+\section{Operationalization of Key Concepts --- Connecting Theory to Data}
+
+Explain how you translate abstract theoretical ideas into specific indicators, codes, or categories that you can identify in your data. If your project involves a formal coding scheme (whether quantitative or qualitative), present it here.
+
+\begin{itemize}[nosep]
+  \item \textbf{Frame categories or themes:} e.g., economic impact, national security implications, human rights focus.
+  \item \textbf{Discursive or textual features:} e.g., adjectives describing actors, rhetorical strategies, sourcing patterns.
+  \item \textbf{Visual aids:} Use tables, diagrams, or figures to make your coding scheme clear.
+\end{itemize}
+
+\medskip
+
+\noindent\textbf{A note on different approaches.} The concept of ``operationalization'' applies most directly to projects that use coding schemes---for example, content analysis or structured qualitative analysis. If your project takes a different approach (e.g., historical analysis, interview-based research, or close reading), the equivalent task is to explain clearly how you identify, select, and interpret the key themes, patterns, or evidence in your sources. The underlying goal is the same: show the reader exactly how you move from abstract concepts to concrete observations.
+
+\begin{examplebox}
+``Building on Pan and Kosicki's framing model, I classify each editorial's focus into `economic impact,' `social justice,' and `political stability.' I note rhetorical cues (e.g., `radical,' `unpatriotic') as markers of negative framing.''
+\end{examplebox}
+
+%--------------------------------------------------------------
+\section{Analytical Steps --- Procedures for Data Interpretation}
+
+Detail the step-by-step methods you will apply to interpret your data. If you use software for coding or text analysis (e.g., MAXQDA, NVivo, Atlas.ti), mention it here. A clear procedural outline makes your analysis transparent and reproducible.
+
+\begin{enumerate}[nosep]
+  \item \textbf{Initial reading:} Familiarize yourself with the full body of material.
+  \item \textbf{Coding or annotation:} Apply the categories, themes, or codes defined in Section~5.
+  \item \textbf{Contextual interpretation:} Situate each coded segment within the relevant historical, political, and cultural context of Korea.
+  \item \textbf{Comparative analysis:} Identify patterns across different sources, time periods, or categories.
+\end{enumerate}
+
+\begin{examplebox}
+``After importing all articles into NVivo, I code recurring words and phrases related to the defined categories. I then compare editorial stances across outlets to identify consistent framing patterns and outlier perspectives.''
+\end{examplebox}
+
+%--------------------------------------------------------------
+\section{Ethical and Positional Considerations}
+
+If you rely on publicly available sources (e.g., published newspaper articles, government documents), ethical concerns may be minimal---but you should still cite properly. If your project involves interviews, surveys, or other human-subject data, describe how you handle informed consent, privacy, and data protection.
+
+Regardless of your data type, consider your positionality as a researcher:
+
+\begin{itemize}[nosep]
+  \item \textbf{Publicly available sources:} Typically no consent is required, but proper citation is essential.
+  \item \textbf{Researcher positionality:} Acknowledge personal, cultural, or linguistic factors that might shape your interpretation---especially if you are analyzing sources in a second language or addressing a politically sensitive topic.
+\end{itemize}
+
+\begin{examplebox}
+``As a student trained in Western media studies, I remain aware of the potential for bias when analyzing Korean-language sources and consult secondary literature to triangulate interpretations.''
+\end{examplebox}
+
+%--------------------------------------------------------------
+\section{Limitations --- Potential Constraints}
+
+Be transparent about the constraints of your chosen approach. Identifying limitations demonstrates scholarly rigor and helps readers evaluate your findings appropriately. Common constraints include:
+
+\begin{itemize}[nosep]
+  \item Availability or representativeness of source material.
+  \item Language proficiency issues (e.g., reliance on translations).
+  \item Time constraints that limit sample size or scope.
+  \item Methodological trade-offs inherent in your chosen approach.
+\end{itemize}
+
+\begin{examplebox}
+``Since I only analyze major conservative and progressive daily newspapers, smaller local outlets may offer alternative framings not captured in this study.''
+\end{examplebox}
+
+%--------------------------------------------------------------
+\section{Concluding Remarks on the Analytical Framework}
+
+Reiterate how each step---from theoretical grounding to methodological execution---enables you to address your research question. Emphasize that this framework establishes the basis for your findings and interpretation in the subsequent sections of the thesis.
+
+\begin{examplebox}
+``This framework integrates media framing theory, discourse analysis, and context-based coding to examine how South Korean newspapers construct narratives around labor strikes. The next chapter applies this framework to the selected corpus and presents the findings in relation to the study's research questions.''
+\end{examplebox}
+
+%--------------------------------------------------------------
+\vspace{1em}
+\begin{tipbox}
+\textbf{Final Tips}
+\begin{enumerate}[nosep, leftmargin=1.5em]
+  \item \textbf{Clarity over complexity.} Use clear, direct language. Show how each method or theoretical concept helps you answer the research question.
+  \item \textbf{Consistency.} Maintain consistent definitions and usage of technical terms throughout (e.g., ``frame,'' ``discourse,'' ``narrative'').
+  \item \textbf{Alignment with the literature.} Continuously reference your literature review. Demonstrate how your chosen framework builds on or engages with existing studies.
+  \item \textbf{Relevance to Korean Studies.} Highlight specific factors in Korean society, history, or culture that justify your methodological choices---for example, the distinct ideological orientations of major Korean newspapers, or the role of particular historical events in shaping public discourse.
+\end{enumerate}
+\end{tipbox}
+
+\vspace{1em}
+
+\noindent
+This outline is designed to help you build an analytical framework that is conceptually grounded, methodologically sound, and tied to the specific demands of Korean Studies. Adapt the headings, add or remove detail, and modify the examples to align with your thesis topic. The goal is a framework that a reader can follow from start to finish and that clearly supports your argument.
+
+\end{document}

@@ -1,0 +1,330 @@
+% !TEX program = lualatex
+%--------------------------------------------------------------
+% Analytical Framework Example: Yemeni Refugee Media Coverage
+% BA Korean Studies Thesis Seminar — Spring 2026
+% Prepared by S.C. Denney
+%--------------------------------------------------------------
+\documentclass[11pt,a4paper]{article}
+
+% ----- Fonts and encoding -----
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}
+
+% ----- Layout -----
+\usepackage[
+  top=2.5cm,
+  bottom=2.5cm,
+  left=2.8cm,
+  right=2.8cm,
+  headheight=14pt
+]{geometry}
+
+% ----- Core packages -----
+\usepackage{microtype}          % fine typography
+\usepackage{parskip}            % blank line between paragraphs, no indent
+\usepackage{enumitem}           % list customization
+\usepackage{booktabs}           % professional tables
+\usepackage{xcolor}             % color definitions
+\usepackage{hyperref}           % clickable links
+\usepackage{fancyhdr}           % headers and footers
+\usepackage{titlesec}           % section formatting
+\usepackage{tcolorbox}          % framed boxes
+
+% ----- Colors -----
+\definecolor{leidenblu}{HTML}{002147}
+\definecolor{leidengold}{HTML}{C4A000}
+\definecolor{examplebg}{HTML}{F5F5F0}
+\definecolor{exampleframe}{HTML}{B0B0A0}
+\definecolor{crossrefbg}{HTML}{EBF0F7}
+\definecolor{crossrefframe}{HTML}{6A89B5}
+
+% ----- Hyperref setup -----
+\hypersetup{
+  colorlinks  = true,
+  linkcolor   = leidenblu,
+  urlcolor    = leidenblu,
+  citecolor   = leidenblu,
+  pdftitle    = {Analytical Framework Example: Yemeni Refugee Media Coverage},
+  pdfauthor   = {S.C. Denney},
+}
+
+% ----- Header / footer -----
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Analytical Framework Example}}
+\fancyhead[R]{\small\textsc{BA Thesis Seminar --- Spring 2026}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ----- Section formatting -----
+\titleformat{\section}
+  {\large\bfseries\color{leidenblu}}
+  {\thesection.}{0.5em}{}
+\titleformat{\subsection}
+  {\normalsize\bfseries\color{leidenblu}}
+  {\thesubsection}{0.5em}{}
+\titlespacing*{\section}{0pt}{1.8ex plus .4ex minus .2ex}{0.8ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{1.2ex plus .3ex minus .1ex}{0.4ex plus .1ex}
+
+% ----- Cross-reference box (links back to guidelines sections) -----
+\newtcolorbox{crossrefbox}[1][]{%
+  colback    = crossrefbg,
+  colframe   = crossrefframe,
+  boxrule    = 0.5pt,
+  arc        = 2pt,
+  left       = 8pt,
+  right      = 8pt,
+  top        = 5pt,
+  bottom     = 5pt,
+  fontupper  = \small,
+  #1
+}
+
+% ----- Tip box environment (same as guidelines) -----
+\newtcolorbox{tipbox}[1][]{%
+  colback    = leidenblu!4,
+  colframe   = leidenblu!50,
+  boxrule    = 0.5pt,
+  arc        = 2pt,
+  left       = 8pt,
+  right      = 8pt,
+  top        = 6pt,
+  bottom     = 6pt,
+  #1
+}
+
+% ----- Footnote styling -----
+\usepackage[hang,flushmargin]{footmisc}
+
+%--------------------------------------------------------------
+\begin{document}
+
+% ----- Title block -----
+\begin{center}
+  {\LARGE\bfseries\color{leidenblu} Analytical Framework Example}\\[4pt]
+  {\large\color{leidenblu} Yemeni Refugee Media Coverage on Jeju Island}\\[8pt]
+  {\normalsize Prepared by S.\,C.\ Denney}\\[3pt]
+  {\small Workgroup 103 \,·\, BA Korean Studies Thesis Seminar \,·\, Spring 2026}
+\end{center}
+
+\vspace{0.8em}
+
+\begin{tipbox}
+\textbf{How to use this document.} This handout illustrates how the nine-section analytical framework described in the \textit{Analytical Framework Guidelines} can be applied to a specific research project. Read the guidelines document first to understand the purpose of each section, then use this example to see how the structure works in practice.
+
+\medskip
+
+Throughout the document, shaded boxes marked with ``\textbf{Guidelines link}'' indicate which section of the guidelines each part of the example corresponds to. The section numbers here follow the guidelines numbering (Sections~1--9).
+\end{tipbox}
+
+\vspace{0.5em}
+
+\noindent
+The example below develops a sample research setup for a BA thesis examining how South Korean newspapers covered the Yemeni refugee arrivals on Jeju Island in 2018. It includes a research question, a justification, a theoretical approach grounded in media studies and representation theory, a clear analytical framework, and a data set comprising articles from three major newspapers (\textit{Hankyoreh}, \textit{JoongAng Ilbo}, \textit{Chosun Ilbo}). You can adapt the specifics---such as the exact number of articles or the theoretical models---to suit your own project.
+
+
+%--------------------------------------------------------------
+\section{Introduction --- Research Question and Purpose}
+
+\begin{crossrefbox}
+\textbf{Guidelines link} $\rightarrow$ \textit{Section~1: Introduction --- Purpose of the Framework.} The guidelines ask you to restate your core research question and explain how the analytical framework will guide your interpretation.
+\end{crossrefbox}
+
+\medskip
+
+\noindent\textbf{Proposed research question:}
+
+\begin{quote}
+How did mainstream South Korean newspapers represent the Yemeni refugee arrivals on Jeju Island between May and August 2018, and what do these representations reveal about differing positions and ideological stances on immigration and refugees in South Korea?
+\end{quote}
+
+This question focuses on domestic media coverage and addresses how each outlet's ideological orientation may shape portrayals of refugee issues. The analytical framework developed below provides a structured approach for interpreting the data and answering this question.
+
+\subsection{Justification and Motivation}
+
+In 2018, the sudden arrival of Yemeni asylum seekers on Jeju Island sparked public debates and policy discussions about immigration, humanitarian responsibility, and national identity. Media outlets played a pivotal role in shaping public perception, and their coverage influenced how policymakers and the general population viewed refugee rights, legal processes, and multiculturalism in Korea. By analyzing how newspapers with divergent editorial stances framed this ``crisis,'' this study contributes to understanding the intersection of media, migration, and social attitudes in contemporary Korean society.
+
+
+%--------------------------------------------------------------
+\section{Theoretical Underpinnings --- Literature and Theoretical Lens}
+
+\begin{crossrefbox}
+\textbf{Guidelines link} $\rightarrow$ \textit{Section~2: Theoretical Underpinnings --- Relevant Theories and Concepts.} The guidelines ask you to identify and define the main theories shaping your study, bridging the literature review and the analytical framework.
+\end{crossrefbox}
+
+\medskip
+
+The theoretical lens for this project draws on three bodies of scholarship.
+
+\subsection{Media Framing Theory}
+
+This study draws on scholars such as Entman (1993), who defines framing as the selection of certain aspects of perceived reality to make them more salient in a communicating text.\footnote{Entman, R.\,M.\ (1993). Framing: Toward clarification of a fractured paradigm. \textit{Journal of Communication}, 43(4), 51--58.} In the context of immigration and refugee discourse, frames function as interpretive structures that influence how the audience understands issues, assigns blame, and evaluates policy responses.\footnote{D'Angelo, P., \& Kuypers, J.\,A.\ (Eds.). (2010). \textit{Doing News Framing Analysis: Empirical and Theoretical Perspectives}. Routledge.} For this project, relevant frames include security, economic burden, cultural threat, and humanitarian duty.
+
+\subsection{Representation and Discourse}
+
+Beyond framing, media play an active role in constructing social realities by shaping how groups are represented through language, imagery, and narrative structures.\footnote{Van Dijk, T.\,A.\ (1991). \textit{Racism and the Press}. Routledge.} Existing studies show that refugee representation in media often relies on binary oppositions---such as victims vs.\ threats, or deserving vs.\ undeserving.\footnote{Parker, S.\ (2015). `Unwanted invaders': The representation of refugees and asylum seekers in the UK and Australian print media. \textit{eSharp}, 23, 1--21.} Headlines, word choices, and source selection contribute to these constructions; for example, refugees are frequently described in passive terms, reinforcing images of helplessness and dependency.\footnote{Esses, V.\,M., Medianu, S., \& Lawson, A.\,S.\ (2013). Uncertainty, threat, and the role of the media in promoting the dehumanization of immigrants and refugees. \textit{Journal of Social Issues}, 69(3), 518--536.}
+
+\subsection{Contextualizing Korean Media}
+
+South Korea's media landscape includes a spectrum of editorial viewpoints. \textit{Hankyoreh} is generally characterized as left-leaning, \textit{JoongAng Ilbo} as centrist or moderate, and \textit{Chosun Ilbo} as right-leaning or conservative. Their differing editorial stances reveal and reflect social and ideological divides within Korean society. Selecting outlets across this spectrum enables a comparative analysis of how ideological positioning shapes coverage of the same event.
+
+
+%--------------------------------------------------------------
+\section{Research Design and Rationale}
+
+\begin{crossrefbox}
+\textbf{Guidelines link} $\rightarrow$ \textit{Section~3: Research Design and Rationale --- Choice of Methods.} The guidelines ask you to connect your research design to the research question and justify your choice of methods.
+\end{crossrefbox}
+
+\medskip
+
+The analytical framework for this project combines \textbf{framing analysis} and \textbf{discourse analysis} to examine the textual elements of news articles. Framing analysis, grounded in the theoretical perspective described above, provides a systematic way to identify the dominant interpretive lenses each newspaper applies to the Yemeni refugee story. Discourse analysis complements this by attending to the specific linguistic and rhetorical choices---word selection, sourcing patterns, narrative structures---that construct meaning at the textual level.
+
+This combined approach is appropriate because the research question asks not only \textit{what} frames appear in the coverage but also \textit{how} language constructs particular representations of refugees and immigration. A purely quantitative content analysis would capture frame frequencies but miss the nuances of rhetorical strategy; discourse analysis provides the tools to examine those nuances.
+
+
+%--------------------------------------------------------------
+\section{Sources and Selection Criteria}
+
+\begin{crossrefbox}
+\textbf{Guidelines link} $\rightarrow$ \textit{Section~4: Sources and Selection Criteria --- Data and Storage.} The guidelines ask you to outline your data sources and explain the criteria for selecting them.
+\end{crossrefbox}
+
+\medskip
+
+\begin{itemize}[nosep]
+  \item \textbf{Timeframe:} May--August 2018. This period covers the initial arrival of Yemeni asylum seekers on Jeju Island and the height of media attention.
+  \item \textbf{Newspapers:} \textit{Hankyoreh} (left-leaning), \textit{JoongAng Ilbo} (centrist), \textit{Chosun Ilbo} (conservative).
+  \item \textbf{Sample:} Five articles per newspaper, for a total of fifteen articles. This is an illustrative sample size; it could be expanded for a full thesis.
+  \item \textbf{Selection criteria:}
+  \begin{enumerate}[nosep]
+    \item The article focuses on Yemeni refugees or the immigration debate.
+    \item The article was published in the opinion/editorial section (where editorial stance is most explicit) or as an in-depth reporting feature.
+  \end{enumerate}
+  \item \textbf{Language:} Korean-language sources.
+  \item \textbf{Diversity:} Aim for a mix of formats (editorials vs.\ news coverage) where possible.
+\end{itemize}
+
+
+%--------------------------------------------------------------
+\section{Operationalization --- Coding and Categorization}
+
+\begin{crossrefbox}
+\textbf{Guidelines link} $\rightarrow$ \textit{Section~5: Operationalization of Key Concepts --- Connecting Theory to Data.} The guidelines ask you to explain how you translate abstract theoretical ideas into specific indicators or codes. This is where theory becomes method.
+\end{crossrefbox}
+
+\medskip
+
+The coding scheme below translates the theoretical framework (media framing theory and discourse analysis) into concrete categories that can be identified in the source texts.
+
+\subsection{Frame Categories}
+
+Based on the framing theory literature, four frame categories guide the initial coding:
+
+\begin{enumerate}[nosep]
+  \item \textbf{Security/Threat Frame:} Highlights risk, danger, illegality, or concerns about public safety.
+  \item \textbf{Economic Burden Frame:} Focuses on the financial costs of accommodating refugees or asylum seekers.
+  \item \textbf{Cultural/Identity Frame:} Emphasizes cultural differences, integration challenges, or concerns about social cohesion.
+  \item \textbf{Humanitarian/Compassion Frame:} Stresses moral or ethical obligations to protect refugees and uphold international norms.
+\end{enumerate}
+
+\subsection{Linguistic and Discourse Features}
+
+In addition to identifying dominant frames, the analysis examines the following textual elements:
+
+\begin{itemize}[nosep]
+  \item \textbf{Keywords and phrases:} Terms indicative of a particular slant (e.g., ``influx,'' ``danger,'' ``humanitarian crisis,'' ``burden,'' ``compassion'').
+  \item \textbf{Rhetorical devices:} Emotional appeals, references to national identity, use of statistics, or appeals to authority.
+  \item \textbf{Source selection:} Whose voices appear in the article? Government officials, refugee advocates, the refugees themselves, or members of the public? Source selection shapes the narrative.
+\end{itemize}
+
+
+%--------------------------------------------------------------
+\section{Analytical Steps --- Procedures for Data Interpretation}
+
+\begin{crossrefbox}
+\textbf{Guidelines link} $\rightarrow$ \textit{Section~6: Analytical Steps --- Procedures for Data Interpretation.} The guidelines ask you to detail the step-by-step methods you will apply to interpret your data.
+\end{crossrefbox}
+
+\medskip
+
+\begin{enumerate}[leftmargin=1.8em]
+  \item \textbf{Initial reading.} Conduct a general reading of each article to identify the main topic, overall tone, and narrative structure. Note first impressions without applying the coding scheme.
+
+  \item \textbf{Systematic coding.} Using the frame categories and discourse features defined in Section~5, read each article carefully. Highlight phrases, sentences, or paragraphs that fit particular frames. Record the coding in a structured spreadsheet or coding software (e.g., NVivo, MAXQDA), noting the article, the passage, and the assigned frame.
+
+  \item \textbf{Comparative analysis.} Compare how each newspaper frames the Yemeni refugees. Look for patterns \textit{within} each outlet (e.g., does \textit{Chosun Ilbo} consistently emphasize the security frame?) and \textit{across} outlets (e.g., do all three newspapers use the economic burden frame, or is it concentrated in one?).
+
+  \item \textbf{Contextualization.} Situate the coded findings within the broader socio-political environment of mid-2018 Korea: the policy debates, the public protests on Jeju, statements by government officials, and the wider social discourse on multiculturalism. Note how the tone or framing in each article aligns with or diverges from its newspaper's editorial identity.
+\end{enumerate}
+
+
+%--------------------------------------------------------------
+\section{Ethical and Positional Considerations}
+
+\begin{crossrefbox}
+\textbf{Guidelines link} $\rightarrow$ \textit{Section~7: Ethical and Positional Considerations.} The guidelines ask you to address ethical concerns and acknowledge your positionality as a researcher.
+\end{crossrefbox}
+
+\medskip
+
+This study relies on publicly available newspaper articles, so formal ethical approval (e.g., for human-subject research) is not required. However, proper citation of all sources is essential.
+
+From a positional standpoint, the researcher should acknowledge any relevant factors: for instance, analyzing Korean-language sources as a non-native speaker requires careful attention to nuance and consultation with secondary literature to verify interpretations. The topic of refugee policy is politically sensitive, and the researcher should be transparent about their own position relative to the debates under study.
+
+
+%--------------------------------------------------------------
+\section{Limitations}
+
+\begin{crossrefbox}
+\textbf{Guidelines link} $\rightarrow$ \textit{Section~8: Limitations --- Potential Constraints.} The guidelines ask you to be transparent about the constraints of your approach.
+\end{crossrefbox}
+
+\medskip
+
+\begin{itemize}[nosep]
+  \item \textbf{Sample size:} The study analyzes only fifteen articles (five per newspaper). A larger dataset would strengthen the generalizability of findings. Future studies might expand the sample or extend the timeframe.
+  \item \textbf{Source scope:} The analysis is limited to three print newspapers. Online media platforms, broadcast media, and user-generated content (e.g., comments sections, social media) may offer additional or contrasting perspectives.
+  \item \textbf{Editorial focus:} The sample prioritizes editorials and in-depth features, where ideological stance is most visible. Straight news reporting may frame the issue differently.
+  \item \textbf{Language proficiency:} If the researcher is not a native Korean speaker, subtle rhetorical or cultural nuances in the source texts may be missed.
+\end{itemize}
+
+
+%--------------------------------------------------------------
+\section{Concluding Remarks --- Interpretation and Broader Implications}
+
+\begin{crossrefbox}
+\textbf{Guidelines link} $\rightarrow$ \textit{Section~9: Concluding Remarks on the Analytical Framework.} The guidelines ask you to reiterate how the framework enables your analysis and sets up the findings.
+\end{crossrefbox}
+
+\medskip
+
+After coding and comparing, interpret how each newspaper's coverage may shape public perception of Yemeni refugees. The core analytical question is: how do left-leaning, centrist, and conservative outlets construct different narratives around the same event, and what does this reveal about the role of ideological media in shaping discourse on immigration in Korea?
+
+\subsection{Reflecting on the Findings}
+
+How do the framings differ among \textit{Hankyoreh}, \textit{JoongAng Ilbo}, and \textit{Chosun Ilbo}? What patterns are consistent across all three, and which aspects vary significantly? Where possible, tie these observations back to existing scholarship on media representation and public opinion regarding migration in Korea.
+
+\subsection{Implications for Public Opinion}
+
+How might these media representations influence broader societal attitudes or policy perspectives? What does the analysis indicate about the role of ideologically diverse media in shaping discourse on refugees and migrant groups in Korea?
+
+\subsection{Future Research}
+
+The limitations noted above point toward future directions: a larger dataset, the inclusion of online media platforms and user comments, or interviews with reporters and editors to understand editorial decision-making from the inside.
+
+%--------------------------------------------------------------
+\vspace{1em}
+
+\begin{tipbox}
+\textbf{Final note.} This example creates a manageable scope for a BA thesis while drawing on established media theories. By examining articles across three newspapers within a specified timeframe, the project demonstrates how ideological positioning influences media portrayal of a contentious refugee situation. The resulting analysis highlights both the role of framing in shaping public understanding and the broader discursive patterns surrounding immigration issues in South Korea.
+
+\medskip
+
+You can adapt the specifics of this example---the topic, the theories, the number of articles, the coding categories---to fit your own research project. The key principle is the same: every element of the analytical framework should trace back to the research question and be grounded in the theoretical literature.
+\end{tipbox}
+
+\end{document}
