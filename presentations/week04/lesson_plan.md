@@ -26,13 +26,13 @@
 
 ## Worked Example: Yemeni Refugee Media Coverage (~20 min)
 - Walk through the example document (on Brightspace)
-- Question, theoretical lens (Entman, Van Dijk, Korean media context)
+- Question, theoretical approach (Entman, Van Dijk, Korean media context)
 - Coding scheme (4 frame categories), analytical steps, interpretation
 - What makes it work: theory-driven, justified sources, explicit steps, connects back to RQ
 - Discussion: how did the researcher get from theory to categories? What's the comparison in your project? What limitations would you flag?
 
 ## Applying This to Your Own Work (~30 min)
-- Each student sketches answers to: theoretical lens, sources, operationalization, steps
+- Each student sketches answers to: theoretical approach, sources, operationalization, steps
 - Go around the group: share answers, ask questions, offer suggestions
 
 ## Next Steps (~10 min)
