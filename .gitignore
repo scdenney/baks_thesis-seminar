@@ -43,3 +43,4 @@ vendor/
 *~
 .vscode/
 .idea/
+setup-sync.sh
