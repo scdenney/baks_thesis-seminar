@@ -17,4 +17,5 @@ Lecture slides are posted here just before and sometimes after each session.
 | 4 | Feb. 27 | Analysis and Reporting – Empirical Strategies for Data Interpretation | [PDF](week04/week04-analysis-reporting.pdf) |
 |   |         | — Analytical Framework Guidelines | [PDF](week04/analytical-framework-guidelines.pdf) |
 |   |         | — Analytical Framework Example: Yemeni Refugees | [PDF](week04/analytical-framework-example.pdf) |
+|   |         | — Analytical Framework Questions and Responses | [PDF](week04/analytical-framework-responses.pdf) |
 | 6 | Mar. 20 | Pre-recorded lecture: Review of weeks 1-4 | — |

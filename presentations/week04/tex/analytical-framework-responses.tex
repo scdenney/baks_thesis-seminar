@@ -1,0 +1,151 @@
+% !TEX program = lualatex
+%--------------------------------------------------------------
+% Analytical Framework Questions — Responses
+% BA Korean Studies Thesis Seminar — Spring 2026
+% S.C. Denney
+%--------------------------------------------------------------
+\documentclass[11pt,a4paper]{article}
+
+% ----- Fonts and encoding -----
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}
+
+% ----- Layout -----
+\usepackage[
+  top=2.5cm,
+  bottom=2.5cm,
+  left=2.8cm,
+  right=2.8cm,
+  headheight=14pt
+]{geometry}
+
+% ----- Core packages -----
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tcolorbox}
+
+% ----- Colors -----
+\definecolor{leidenblu}{HTML}{002147}
+\definecolor{leidengold}{HTML}{C4A000}
+\definecolor{questionbg}{HTML}{F5F5F0}
+\definecolor{questionframe}{HTML}{B0B0A0}
+
+% ----- Hyperref setup -----
+\hypersetup{
+  colorlinks  = true,
+  linkcolor   = leidenblu,
+  urlcolor    = leidenblu,
+  pdftitle    = {Analytical Framework Questions — Responses},
+  pdfauthor   = {S.C. Denney},
+}
+
+% ----- Header / footer -----
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Analytical Framework --- Questions and Responses}}
+\fancyhead[R]{\small\textsc{BA Thesis Seminar --- Spring 2026}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ----- Question box -----
+\newtcolorbox{questionbox}{%
+  colback    = questionbg,
+  colframe   = questionframe,
+  boxrule    = 0.5pt,
+  arc        = 2pt,
+  left       = 8pt,
+  right      = 8pt,
+  top        = 6pt,
+  bottom     = 6pt,
+  fontupper  = \small,
+  before upper = {\textbf{Question:}\enspace},
+}
+
+% ----- Remove section numbering -----
+\setcounter{secnumdepth}{0}
+
+%--------------------------------------------------------------
+\begin{document}
+
+% ----- Title block -----
+\begin{center}
+  {\LARGE\bfseries\color{leidenblu} Analytical Framework Questions}\\[4pt]
+  {\large\color{leidenblu} Responses from Week 4}\\[8pt]
+  {\normalsize S.\,C.\ Denney}\\[3pt]
+  {\small Workgroup 103 \,·\, BA Korean Studies Thesis Seminar \,·\, 09.03.2026}
+\end{center}
+
+\vspace{0.8em}
+
+\noindent
+The following questions were raised during the student-led session on the analytical framework (Week 4, February 27). Below are my responses. If you have follow-up questions, bring them to office hours or email me.
+
+\vspace{1em}
+
+%--------------------------------------------------------------
+
+\begin{questionbox}
+Relevant theories and concepts: How do you determine which theories are the most relevant? In how much detail should you trace the theoretical foundations to also ensure you are using the right framework?
+\end{questionbox}
+
+\noindent\textbf{Response:} Choose theories that directly help explain your research question and guide your variables or interpretation. Trace the theoretical foundations only far enough to show you understand where the framework comes from and why it is appropriate for your case.
+
+\vspace{1.2em}
+
+%--------------------------------------------------------------
+
+\begin{questionbox}
+Avoiding repetition in the literature review: If a theory has already been discussed earlier in the literature review, to what extent should you repeat it in the analytical framework? How do you refer back to it without unnecessary duplication?
+\end{questionbox}
+
+\noindent\textbf{Response:} Do not repeat full explanations. Briefly restate the key concept or definition and explicitly refer back to the literature review where it was discussed in more detail.
+
+\vspace{1.2em}
+
+%--------------------------------------------------------------
+
+\begin{questionbox}
+Confidence in definitions: How do you (confidently) commit to a specific definition of a concept when multiple definitions exist? How do you justify your choice?
+\end{questionbox}
+
+\noindent\textbf{Response:} Select the definition that best fits your research question and empirical material. Justify the choice by citing key scholars and explaining why that definition is analytically useful for your study.
+
+\vspace{1.2em}
+
+%--------------------------------------------------------------
+
+\begin{questionbox}
+Ethics of using blog posts or online messages: If you use posts or messages from a specific blogosphere or online community, to what extent is this ethically acceptable? What ethical considerations (e.g., consent, privacy, anonymity, unobtrusiveness) should you take into account and include in the ethics discussion in the thesis?
+\end{questionbox}
+
+\noindent\textbf{Response:} Publicly available online content (blogs, public forums, social media posts) can generally be used as research material if it is properly cited and documented. However, researchers should still consider potential harm, expectations of privacy, and whether the platform is clearly public. In some cases, anonymizing usernames or avoiding unnecessary identification may be appropriate, especially if individuals are private persons rather than public figures. A short explanation of how the material was collected and cited should be included in the ethics or methods discussion.
+
+\vspace{1.2em}
+
+%--------------------------------------------------------------
+
+\begin{questionbox}
+Placement of limitations and future research: Where should the research limitations be discussed? Only in a separate limitations section, or can they also appear in the conclusion? And where is it most appropriate to introduce suggestions for future research?
+\end{questionbox}
+
+\noindent\textbf{Response:} Limitations are usually discussed in a short dedicated section near the end of the thesis or within the discussion. Future research is most commonly suggested in the conclusion.
+
+\vspace{1.2em}
+
+%--------------------------------------------------------------
+
+\begin{questionbox}
+Dealing with abstraction and early research phases: When ideas are still abstract and the research is not yet fully developed, how can you make well-founded methodological and theoretical choices at this stage?
+\end{questionbox}
+
+\noindent\textbf{Response:} At early stages, make provisional choices based on the best available literature and your research question. Frameworks and methods can be refined later as your literature review and data familiarity improve.
+
+\end{document}
