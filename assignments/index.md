@@ -36,7 +36,7 @@ The revised research proposal builds on work completed in the BA2 Research Semin
 - Proposed methodology and data sources
 - Timeline for completion
 
-**Rubric:** [Download PDF]({{ '/rubrics/Assignment 1_rubric_BAKS thesis.pdf' | relative_url }})
+**Rubric:** [Download PDF]({{ '/rubrics/Assignment 1_rubric_BAKS thesis.pdf' | relative_url }}) *(last verified: Spring 2026; current unless otherwise noted)*
 
 ---
 
@@ -52,7 +52,7 @@ The preliminary draft includes a substantially developed introduction, literatur
 - Analytical framework or methodology section
 - Preliminary structure for body chapters
 
-**Rubric:** [Download PDF]({{ '/rubrics/Assignment 2_rubric_BAKS thesis.pdf' | relative_url }})
+**Rubric:** [Download PDF]({{ '/rubrics/Assignment 2_rubric_BAKS thesis.pdf' | relative_url }}) *(last verified: Spring 2026; current unless otherwise noted)*
 
 ---
 
@@ -69,7 +69,7 @@ The empirical draft is a near-complete version of your thesis that includes your
 - Preliminary conclusion
 - Working bibliography
 
-**Rubric:** [Download PDF]({{ '/rubrics/Assignment 3_rubric_BAKS thesis.pdf' | relative_url }})
+**Rubric:** [Download PDF]({{ '/rubrics/Assignment 3_rubric_BAKS thesis.pdf' | relative_url }}) *(last verified: Spring 2026; current unless otherwise noted)*
 
 ---
 
