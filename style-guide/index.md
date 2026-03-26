@@ -84,6 +84,26 @@ Submit final thesis to supervisor via email.
 
 ---
 
+## Frequently Asked Questions
+
+**How do I format names when a source has both Korean and non-Korean co-authors?**
+
+In footnotes, list all authors in the order they appear on the publication using First Name Last Name format — regardless of nationality. In bibliography entries, only the first author's name is inverted (Last Name, First Name); subsequent authors remain in normal order. This follows standard Chicago style.
+
+**If a Korean scholar publishes in English, do I need to add Hangul?**
+
+No. The requirement to include the original Korean title in brackets applies only to Korean-language sources. If the work is published in English, cite it as you would any other English-language source.
+
+**Should I standardize the romanization of Korean authors' names, or use their preferred spelling?**
+
+Use the author's preferred spelling as it appears on the publication. Do not impose MCR romanization on personal names that already have an established English spelling. For example, if an author publishes as "Han Seungwoo," cite them as Han Seungwoo — not as Han Sŭng'u. The MCR exception for well-known names extends to any author's own established usage.
+
+**How do I order Korean-language and English-language sources in the bibliography?**
+
+Use a single alphabetized bibliography based on the romanized form of each entry. Korean-language sources are alphabetized by the romanized family name alongside English-language sources. Do not separate Korean and English sources into different sections.
+
+---
+
 ## Further Information
 
 Consult the *Chicago Manual of Style* via the [university library](https://catalogue.leidenuniv.nl/). The 18th edition includes Korean language guidance (Chapter 11, sections 11.95-11.99).
