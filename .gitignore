@@ -44,3 +44,8 @@ vendor/
 .vscode/
 .idea/
 setup-sync.sh
+.DS_Store
+
+# Large files exceeding GitHub limit
+presentations/week06/preliminary draft guidance.pptx
+presentations/week06/preliminary draft guidance_compressed.mp4
