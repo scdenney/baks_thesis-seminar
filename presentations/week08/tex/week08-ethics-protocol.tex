@@ -1,0 +1,522 @@
+% Week 8: Ethical Concerns (AI, Plagiarism) and Review of KS Protocol
+% BA-Eindwerkstuk Seminar - Leiden University
+% Dr. Steven Denney
+
+\documentclass[aspectratio=169,11pt]{beamer}
+
+% ============================================
+% Packages
+% ============================================
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{booktabs}
+
+% Load custom theme
+\usepackage{beamerthemethesis}
+
+% ============================================
+% Metadata
+% ============================================
+\title{BA-Eindwerkstuk Seminar}
+\subtitle{Week 8: Ethical Concerns and Review of the Thesis Protocol}
+\author{Dr. Steven Denney}
+\institute{Korean Studies \\ Leiden University}
+\date{April 17, 2026}
+
+% ============================================
+% Document
+% ============================================
+\begin{document}
+
+% --------------------------------------------
+% Title Slide
+% --------------------------------------------
+\begin{frame}[plain,noframenumbering]
+    \titlepage
+\end{frame}
+
+% ============================================
+\section{Data Check-In}
+% ============================================
+
+\begin{frame}{Today's Agenda}
+    \begin{enumerate}
+        \item Data check-in: revisiting FAIR principles
+        \item AI and ethics in research
+        \item Discussion: your experience with AI tools
+        \item Review of the Thesis Protocol and Assignment \#3
+    \end{enumerate}
+    \vspace{0.5cm}
+    \begin{block}{Context}
+        You have submitted Assignment \#2. You are deep in your research. Today we pause to address two things: the ethics of how you work, and the expectations for what comes next.
+    \end{block}
+\end{frame}
+
+\begin{frame}{Where Are You With Your Data?}
+    Assignment \#2 asked you to present your methodology and analytical framework. Now comes the harder part: \textbf{doing the analysis}.
+    \vspace{0.5cm}
+
+    \textbf{Honest self-assessment:}
+    \begin{itemize}
+        \item Do you actually \textit{have} your data---or are you still planning to collect it?
+        \item Is it organized in a way that lets you work with it?
+        \item Could someone else understand what you collected and why?
+        \item Are you confident you can analyze it with the methods you described?
+    \end{itemize}
+    \vspace{0.3cm}
+    \begin{alertblock}{No judgment}
+        If the answer to any of these is ``no,'' that is fine---but you need to address it \textit{now}, not in Week 10.
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{Revisiting FAIR Principles}
+    In Week 2 we introduced FAIR as a way to think structurally about data. Now that you are \textit{in} your research, let's check in.
+    \vspace{0.3cm}
+    \begin{table}
+        \small
+        \begin{tabular}{lp{0.65\textwidth}}
+            \toprule
+            \textbf{Principle} & \textbf{Ask Yourself} \\
+            \midrule
+            \textbf{Findable} & Can you locate all your sources? Are files named clearly? Could you find a specific document in under a minute? \\
+            \addlinespace
+            \textbf{Accessible} & Is your data backed up? Could you recover everything if your laptop died tomorrow? \\
+            \addlinespace
+            \textbf{Interoperable} & Are your files in standard formats? Could your supervisor open and read them? \\
+            \addlinespace
+            \textbf{Reusable} & Have you documented \textit{where} each source came from, \textit{when} you collected it, and \textit{how}? \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Exercise: Data Readiness Check}
+    \textbf{Take 5 minutes. Write brief answers to:}
+    \vspace{0.3cm}
+    \begin{enumerate}
+        \item What data do you have \textit{in hand} right now?
+        \item What data do you still need to collect?
+        \item Where is it stored and how is it organized?
+        \item What is your plan for the next three weeks to get from where you are to a draft empirical chapter?
+    \end{enumerate}
+    \vspace{0.5cm}
+    \begin{block}{Discussion}
+        Let's hear from a few of you. What is going well? Where are you stuck?
+    \end{block}
+\end{frame}
+
+\begin{frame}{Data Collection and Transparency}
+    Your analytical framework describes \textit{what} you will do. But your reader also needs to know:
+    \vspace{0.3cm}
+    \begin{itemize}
+        \item \textbf{How} you collected or generated your data
+        \item \textbf{Why} you selected these particular sources (and not others)
+        \item \textbf{What limitations} your data has---and how those affect your findings
+    \end{itemize}
+    \vspace{0.3cm}
+    This is not just methodological rigor. It is an \textbf{ethical obligation}: transparency about your evidence is foundational to academic integrity.
+    \vspace{0.3cm}
+    \begin{exampleblock}{Remember}
+        Open science does not mean you must share everything publicly. It means you must be \textit{honest} about what you did and how you did it.
+    \end{exampleblock}
+\end{frame}
+
+% ============================================
+\section{AI and Ethics in Research}
+% ============================================
+
+\begin{frame}{Why Talk About This Now?}
+    You are in the middle of independent research. You are writing, reading, analyzing, and making decisions every day.
+    \vspace{0.5cm}
+
+    Generative AI tools are widely available. Many of you may already be using them---for brainstorming, for writing, for translation, or for other tasks.
+    \vspace{0.5cm}
+
+    \textbf{This is not a scare talk.} It is a practical conversation about:
+    \begin{itemize}
+        \item What the university policy actually says
+        \item What responsible use looks like
+        \item Where the lines are
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{The Faculty Policy: Five Basic Principles}
+    The Faculty of Humanities \textit{Guidelines for the Use of GenAI in Assessment} (August 2025) rest on five principles:
+    \vspace{0.3cm}
+    \begin{enumerate}
+        \item \textbf{Integrity} --- Your degree represents specific academic skills. The learning process matters more than the product.
+        \item \textbf{Transparency} --- You must always be open about your working methods.
+        \item \textbf{Independence} --- You must demonstrate that \textit{you} achieved the learning objectives.
+        \item \textbf{Fraud} --- Any action that hinders correct assessment of your knowledge is fraud.
+        \item \textbf{Responsibility} --- You have full responsibility for what you submit.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{The Default Rule}
+    \begin{alertblock}{The default position is prohibition}
+        The use of GenAI products or content in \textbf{any form of assessment} is \textbf{not permitted}, unless your teacher has \textbf{explicitly} indicated which uses are allowed and under what conditions.
+    \end{alertblock}
+    \vspace{0.5cm}
+    Key implications:
+    \begin{itemize}
+        \item Permission in one course does \textbf{not} carry over to another
+        \item If your teacher has not said it is allowed, assume it is \textbf{not}
+        \item When in doubt: \textbf{ask your supervisor}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{What You CAN Do}
+    The following are \textbf{generally permitted}, even without explicit instructor approval:
+    \vspace{0.3cm}
+    \begin{itemize}
+        \item \textbf{Spelling and grammar checks} --- Tools like Grammarly or built-in spell checkers are fine, unless language skills are being assessed
+        \item \textbf{Machine translation of your own text} --- e.g., translating a sentence you wrote from Dutch to English using DeepL
+    \end{itemize}
+    \vspace{0.3cm}
+    With \textbf{explicit supervisor permission} and \textbf{full disclosure}:
+    \begin{itemize}
+        \item Using AI to brainstorm or generate ideas (not final text)
+        \item Using AI to help understand a concept (as a learning aid)
+        \item Using AI to assist with coding or data formatting tasks
+    \end{itemize}
+    \vspace{0.3cm}
+    \textit{In all cases: disclose, disclose, disclose.}
+\end{frame}
+
+\begin{frame}{Best Practices}
+    \begin{enumerate}
+        \item \textbf{Verify everything} --- AI tools produce plausible-sounding text that may be factually wrong. LLMs generate \textit{language}, not \textit{knowledge}. Always check.
+        \item \textbf{Be aware of hallucinations} --- AI tools fabricate citations, invent sources, and present false claims confidently. \textit{Never} trust an AI-generated reference without verifying it exists.
+        \item \textbf{Watch for bias} --- AI output can contain and reinforce stereotypes (ethnic, gender, cultural). Be critical.
+        \item \textbf{Keep records} --- Maintain a log of all prompts and outputs. Faculty policy requires you to hand these over on request.
+        \item \textbf{Disclose all use} --- In your thesis, describe any AI tools used and how.
+        \item \textbf{Treat AI as a tool, not an author} --- Your thesis must reflect \textit{your} thinking, \textit{your} analysis, and \textit{your} voice.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{What You CANNOT Do}
+    \begin{alertblock}{Prohibited uses}
+        \begin{itemize}
+            \item \textbf{Submit AI-generated text as your own work} --- including copying, paraphrasing, or translating AI output without citation
+            \item \textbf{Upload confidential or copyrighted material} to AI tools --- this includes interview transcripts, unpublished data, and others' work
+            \item \textbf{Use AI to rewrite someone else's text} --- even with paraphrasing, this is fraud
+            \item \textbf{Reproduce AI-generated material without citation} --- if you use it, cite it
+            \item \textbf{Assume blanket permission} --- approval in one course or for one task does not extend to others
+        \end{itemize}
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{When AI Use Is Permitted: How to Cite}
+    If your supervisor explicitly allows a specific use of GenAI, you must cite it. The faculty provides citation formats:
+    \vspace{0.3cm}
+    \footnotesize
+    \begin{table}
+        \begin{tabular}{p{0.12\textwidth}p{0.55\textwidth}p{0.2\textwidth}}
+            \toprule
+            \textbf{Tool} & \textbf{Reference} & \textbf{In-text} \\
+            \midrule
+            ChatGPT & OpenAI. (2023). ChatGPT (Sept 25 version) [Large Language Model]. \url{https://chat.openai.com/} & (OpenAI, 2023) \\
+            \addlinespace
+            Gemini & Google AI. (2023). Gemini (Oct 23 version) [Large language model]. Google. \url{https://gemini.google.com/} & (Google AI, 2023) \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    \normalsize
+    \vspace{0.3cm}
+    \begin{block}{Important}
+        You must also maintain a record of all prompts and AI output, to be provided to your supervisor on request.
+    \end{block}
+\end{frame}
+
+\begin{frame}{Machine Translation: A Common Case}
+    Machine translation (DeepL, Google Translate) is \textbf{generally allowed} for translating text you wrote yourself.
+    \vspace{0.3cm}
+
+    \textbf{How to cite it:}
+    \vspace{0.2cm}
+
+    \begin{exampleblock}{Example (from faculty guidelines)}
+        \footnotesize
+        ``O fenomeno da traducao indireta\ldots'' [The phenomenon of indirect translation is a manifestation of the marginality of a language\ldots] (Pieta 2013, p.~40; our translation supported by DeepL).
+    \end{exampleblock}
+    \vspace{0.3cm}
+
+    \textbf{Not allowed:}
+    \begin{itemize}
+        \item Using machine translation to translate \textit{someone else's text} and presenting it as your own work
+        \item Using translation tools when translation skill is being assessed
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Plagiarism: A Brief Reminder}
+    Plagiarism is presenting another person's work or ideas as your own. This includes:
+    \vspace{0.3cm}
+    \begin{itemize}
+        \item Using direct quotations without citation
+        \item Paraphrasing without acknowledgment
+        \item Appropriating someone else's arguments or structure
+        \item Failing to use quotation marks for direct quotes
+        \item Internet and digital sources are held to the \textbf{same standard} as print sources
+    \end{itemize}
+    \vspace{0.3cm}
+    Plagiarism results in course failure. See the \textcolor{SlateBlue}{\href{https://www.organisatiegids.universiteitleiden.nl/en/regulations/general/plagiarism}{Regulations on Plagiarism}} for the full policy.
+    \vspace{0.3cm}
+
+    \begin{block}{The connection}
+        The AI guidelines and the plagiarism regulations share the same foundation: \textbf{your work must be your own}, and you must be \textbf{transparent} about how it was produced.
+    \end{block}
+\end{frame}
+
+% ============================================
+\section{Discussion}
+% ============================================
+
+\begin{frame}{Scenarios: What Would You Do?}
+    \textbf{Discuss in pairs, then we'll talk as a group.}
+    \vspace{0.3cm}
+    \begin{enumerate}
+        \item You use ChatGPT to brainstorm three possible ways to organize your findings chapter. You don't copy any text---you just use the structure as inspiration. Do you need to disclose this?
+        \vspace{0.2cm}
+        \item You paste a paragraph from a Korean newspaper article into DeepL and use the English translation in your thesis, with a citation for the original article. Is this acceptable?
+        \vspace{0.2cm}
+        \item You ask an AI tool to ``improve the academic tone'' of a paragraph you wrote. It rewrites several sentences substantially. You use the rewritten version. What are the issues?
+        \vspace{0.2cm}
+        \item You upload your interview transcripts to an AI tool to help identify themes. What concerns should you have?
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Open Conversation}
+    \textbf{Let's talk honestly:}
+    \vspace{0.5cm}
+    \begin{itemize}
+        \item Have you used AI tools in your research process so far?
+        \item What for? What worked? What didn't?
+        \item Where do you feel uncertain about the boundaries?
+        \item What would help you make better decisions about AI use going forward?
+    \end{itemize}
+    \vspace{0.5cm}
+    \begin{block}{Ground rule}
+        This is a learning conversation, not an investigation. The goal is to leave this room with a clear understanding of the policy and confidence in how to apply it.
+    \end{block}
+\end{frame}
+
+\begin{frame}[plain,noframenumbering]
+    \vspace{2.5cm}
+    \begin{center}
+        {\color{AccentBlue}\Huge\bfseries Break}
+        \vspace{0.3cm}
+
+        {\color{DustyRose}\rule{3cm}{0.8pt}}
+        \vspace{0.5cm}
+
+        {\color{TextMuted}\large 10 minutes}
+    \end{center}
+\end{frame}
+
+% ============================================
+\section{Thesis Protocol Review}
+% ============================================
+
+\begin{frame}{Where We Are}
+    \begin{table}
+        \small
+        \begin{tabular}{lll}
+            \toprule
+            \textbf{Milestone} & \textbf{Date} & \textbf{Status} \\
+            \midrule
+            Boot camp (Weeks 1--4) & Feb. 06 -- Feb. 27 & \textcolor{SageGreen}{Complete} \\
+            Assignment \#1: Revised Proposal & Mar. 13 & \textcolor{SageGreen}{Complete} \\
+            Peer review (Week 7) & Apr. 10 & \textcolor{SageGreen}{Complete} \\
+            Assignment \#2: Preliminary Draft & Apr. 03 & \textcolor{SageGreen}{Complete} \\
+            \textbf{You are here} & \textbf{Apr. 17} & --- \\
+            Assignment \#3: Empirical Draft & May 06 & \textcolor{Terracotta}{In 3 weeks} \\
+            Final Manuscript & Jun. 01 & \textcolor{Terracotta}{In 7 weeks} \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    \vspace{0.3cm}
+    \begin{alertblock}{The trajectory}
+        You have written a proposal and a preliminary draft. The next step is to show that you can \textbf{do the research}---collect data, analyze it, and present findings.
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{Assignment \#3: Empirical Draft}
+    \textbf{Due: May 06, 2026} \hfill \textit{5,000+ words}
+    \vspace{0.3cm}
+
+    This is a draft of your empirical chapter. It should:
+    \begin{itemize}
+        \item Apply the research design laid out in earlier assignments
+        \item Present the initial stages of data analysis
+        \item Demonstrate that data aligns with your question and methodology
+        \item Show preliminary findings with emphasis on how evidence addresses the research problem
+        \item Build upon and integrate with your literature review and analytical framework
+    \end{itemize}
+    \vspace{0.3cm}
+    \begin{block}{Key point}
+        The empirical chapter must be \textbf{coherently linked} to your prior sections. It is not a standalone piece---it shows a logical connection between your design and your emerging analysis.
+    \end{block}
+\end{frame}
+
+\begin{frame}{Assignment \#3: How It Is Assessed}
+    \footnotesize
+    \begin{table}
+        \begin{tabular}{p{0.2\textwidth}p{0.7\textwidth}}
+            \toprule
+            \textbf{Criterion} & \textbf{What Distinguishes Strong Work} \\
+            \midrule
+            Empirical Analysis & Analysis is aligned with the research question and shows insight into the data; well-supported claims \\
+            \addlinespace
+            Use of Evidence & Appropriate primary data; well-selected excerpts, quotes, or figures that fully support the argument \\
+            \addlinespace
+            Integration with Literature \& Method & Excellent integration with prior sections; empirical chapter builds on and completes the earlier design \\
+            \addlinespace
+            Structure \& Clarity & Clear organization, strong transitions, academic tone and style \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    \normalsize
+    \vspace{0.3cm}
+    The full rubric is available on the \textcolor{SlateBlue}{\href{https://scdenney.github.io/baks_thesis-seminar/assignments/}{course website}}.
+\end{frame}
+
+\begin{frame}{The Four Assessment Criteria (Protocol)}
+    Your final thesis is assessed on four criteria. These apply to Assignment \#3 as well:
+    \vspace{0.3cm}
+    \begin{enumerate}
+        \item \textbf{Knowledge and insight} --- Research question, motivation, literature review. Does the question reflect insight into key discussions in the field?
+        \vspace{0.15cm}
+        \item \textbf{Application of knowledge} --- Data, methods, analysis. Is there critical analysis of primary sources? Are methods effective and justified?
+        \vspace{0.15cm}
+        \item \textbf{Reaching conclusions} --- Synthesis, contribution, limitations. Are conclusions logical and well-founded? Is empirical analysis central?
+        \vspace{0.15cm}
+        \item \textbf{Communication} --- Writing, structure, citations. Is the language competent? Is the structure clear? Are citations correct?
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Example Thesis Structure}
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \textbf{I. Introduction}
+            \begin{itemize}
+                \footnotesize
+                \item Research question
+                \item Problem, gap, motivation
+                \item Proposed research plan
+                \item Thesis roadmap
+            \end{itemize}
+            \vspace{0.2cm}
+            \textbf{II. Literature Review}
+            \begin{itemize}
+                \footnotesize
+                \item LR section I, II, \ldots \textit{n}
+            \end{itemize}
+            \vspace{0.2cm}
+            \textbf{III. Analytical Framework}
+            \begin{itemize}
+                \footnotesize
+                \item Design, data, and methods
+                \item Methodological concerns and scope
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \textbf{IV. Empirical Findings} \textcolor{Terracotta}{$\leftarrow$ Assignment \#3}
+            \begin{itemize}
+                \footnotesize
+                \item Outcome I, II, \ldots \textit{n}
+            \end{itemize}
+            \vspace{0.2cm}
+            \textbf{V. Conclusion and Discussion}
+            \begin{itemize}
+                \footnotesize
+                \item Summary of research and findings
+                \item Research contributions
+                \item Limitations
+                \item Future research
+            \end{itemize}
+            \vspace{0.2cm}
+            \textbf{VI. Bibliography}
+            \vspace{0.2cm}
+
+            \textbf{VII. Appendices}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Grade Descriptors: What Do the Numbers Mean?}
+    \begin{table}
+        \small
+        \begin{tabular}{lp{0.7\textwidth}}
+            \toprule
+            \textbf{Grade} & \textbf{What It Means} \\
+            \midrule
+            9--10 & Outstanding; original, independent thinking; rigorous argument supported by wide evidence \\
+            \addlinespace
+            8--8.9 & Excellent understanding; independent thought; strong, well-organized argument \\
+            \addlinespace
+            7--7.9 & Good to very good; most criteria met \\
+            \addlinespace
+            6--6.9 & Satisfactory; reasonable argument with some shortcomings but no fundamental errors \\
+            \addlinespace
+            5.1--5.9 & \textbf{The faculty does not issue grades in this range} \\
+            \addlinespace
+            3--5.0 & Inadequate; substantial omissions \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    \vspace{0.2cm}
+    \textit{To pass the seminar: overall mark of 5.50 (= 6) or higher, with Assignment \#3 at 5.5+.}
+\end{frame}
+
+% ============================================
+\section{Looking Ahead}
+% ============================================
+
+\begin{frame}{The Path Forward}
+    \begin{table}
+        \small
+        \begin{tabular}{lll}
+            \toprule
+            \textbf{Week} & \textbf{Date} & \textbf{What Happens} \\
+            \midrule
+            9 & Apr. 24 & No class --- free research time \\
+            10 & May 01 & No class --- free research time \\
+            --- & \textbf{May 06} & \textbf{Assignment \#3 due} \\
+            11 & May 08 & In-class review and consultations \\
+            --- & \textbf{Jun. 01} & \textbf{Final manuscript due} \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    \vspace{0.3cm}
+    \textbf{What to focus on in the next three weeks:}
+    \begin{enumerate}
+        \item Finish data collection (if not done)
+        \item Begin analysis --- apply your framework to your data
+        \item Write the empirical chapter draft
+        \item Meet with your supervisor
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Key Takeaways}
+    \begin{enumerate}
+        \item \textbf{Know your data.} If you cannot describe what you have, where it is, and how you will analyze it, fix that this week.
+        \vspace{0.2cm}
+        \item \textbf{Be transparent.} About your methods, your sources, and your use of any tools---including AI.
+        \vspace{0.2cm}
+        \item \textbf{When in doubt, ask.} Your supervisor is your first resource for questions about AI use, methodology, or scope.
+        \vspace{0.2cm}
+        \item \textbf{Assignment \#3 is the core of your thesis.} It shows you can do the research, not just plan it.
+    \end{enumerate}
+    \vspace{0.5cm}
+    \begin{block}{Resources}
+        \footnotesize
+        \textcolor{SlateBlue}{\href{https://scdenney.github.io/baks_thesis-seminar/}{Course website}} ~|~
+        \textcolor{SlateBlue}{\href{https://scdenney.github.io/baks_thesis-seminar/protocol/}{Thesis Protocol}} ~|~
+        \textcolor{SlateBlue}{\href{https://www.organisatiegids.universiteitleiden.nl/en/regulations/humanities/guidelines-for-the-use-of-genai-in-assessment}{Faculty GenAI Guidelines}} ~|~
+        \textcolor{SlateBlue}{\href{https://www.organisatiegids.universiteitleiden.nl/en/regulations/general/plagiarism}{Plagiarism Regulations}}
+    \end{block}
+\end{frame}
+
+\end{document}

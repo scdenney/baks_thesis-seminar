@@ -19,3 +19,4 @@ Lecture slides are posted here just before and sometimes after each session.
 |   |         | — Analytical Framework Example: Yemeni Refugees | [PDF](week04/analytical-framework-example.pdf) |
 |   |         | — Analytical Framework Questions and Responses | [PDF](week04/analytical-framework-responses.pdf) |
 | 6 | Mar. 20 | Pre-recorded lecture: Additional guidance for Assignment #2 | [Video](week06/week06-preliminary-draft-guidance.mp4) |
+| 8 | Apr. 17 | Ethical Concerns and Review of the Thesis Protocol | [PDF](week08/week08-ethics-protocol.pdf) |

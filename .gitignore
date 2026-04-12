@@ -14,6 +14,9 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
+# Instructor materials (not for public repo)
+_instructor-materials/
+
 # Source documents
 *.docx
 previous_*.pdf
